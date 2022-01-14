@@ -1,0 +1,7 @@
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csprojAssemblyReference.cache
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe.config
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.pdb
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.exe
+C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.pdb

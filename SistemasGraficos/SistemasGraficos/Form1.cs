@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace SistemasGraficos
 {
-    public partial class Form1 : Form
+    public partial class frmGastoRestaurante : Form
     {
-        public Form1()
+        public frmGastoRestaurante()
         {
             InitializeComponent();
+        }
+
+        private void btnDividir_Click(object sender, EventArgs e)
+        {
+            txtTotalDaConta.Text = (Convert.ToDouble(
+                txtDespesa.Text) * 1.10).ToString("N");
         }
     }
 }

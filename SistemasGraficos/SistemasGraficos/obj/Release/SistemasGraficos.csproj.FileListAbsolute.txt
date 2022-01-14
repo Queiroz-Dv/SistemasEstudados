@@ -1,0 +1,10 @@
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\bin\Release\SistemasGraficos.exe.config
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\bin\Release\SistemasGraficos.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\bin\Release\SistemasGraficos.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.frmTrocaDeValores.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.Properties.Resources.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Release\SistemasGraficos.pdb

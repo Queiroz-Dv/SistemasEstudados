@@ -2,9 +2,9 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\Sistem
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\bin\Debug\SistemasGraficos.exe
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\bin\Debug\SistemasGraficos.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.csprojAssemblyReference.cache
-C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.frmTrocaDeValores.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.Properties.Resources.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.csproj.GenerateResource.cache
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.csproj.CoreCompileInputs.cache
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.exe
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\SistemasGraficos\SistemasGraficos\obj\Debug\SistemasGraficos.frmGastoRestaurante.resources

@@ -16,7 +16,7 @@ namespace SistemasGraficos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTrocaDeValores());
+            Application.Run(new frmGastoRestaurante());
         }
     }
 }

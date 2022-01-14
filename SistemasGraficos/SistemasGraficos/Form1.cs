@@ -10,22 +10,17 @@ using System.Windows.Forms;
 
 namespace SistemasGraficos
 {
-    public partial class frmTrocaDeValores : Form
+    public partial class frmGastoRestaurante : Form
     {
-        public frmTrocaDeValores()
+        public frmGastoRestaurante()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDividir_Click(object sender, EventArgs e)
         {
-            string aux = txtPrimeiroValor.Text;
-            txtPrimeiroValor.Text = txtSegundoValor.Text;
-            txtSegundoValor.Text = aux;
-
-            MessageBox.Show("Troca de valores realizada com sucesso.","Informação", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-                
+            txtTotalDaConta.Text = (Convert.ToDouble(
+                txtDespesa.Text) * 1.10).ToString("N");
         }
     }
 }

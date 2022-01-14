@@ -1,0 +1,10 @@
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\bin\Debug\DelegateStudy.exe.config
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\bin\Debug\DelegateStudy.exe
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\bin\Debug\DelegateStudy.pdb
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.Form1.resources
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.Properties.Resources.resources
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.exe
+C:\Users\Dubst\source\repos\InheritanceStudy\DelegateStudy\obj\Debug\DelegateStudy.pdb

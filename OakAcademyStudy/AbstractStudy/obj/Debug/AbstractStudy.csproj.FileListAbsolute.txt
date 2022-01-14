@@ -1,0 +1,10 @@
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\bin\Debug\AbstractStudy.exe.config
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\bin\Debug\AbstractStudy.exe
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\bin\Debug\AbstractStudy.pdb
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.Form1.resources
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.Properties.Resources.resources
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.exe
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.pdb
+C:\Users\Dubst\source\repos\InheritanceStudy\AbstractStudy\obj\Debug\AbstractStudy.csprojAssemblyReference.cache

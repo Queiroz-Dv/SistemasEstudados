@@ -1,0 +1,7 @@
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\obj\Debug\TurnDev.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\obj\Debug\TurnDev.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\bin\Debug\TurnDev.exe.config
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\bin\Debug\TurnDev.exe
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\bin\Debug\TurnDev.pdb
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\obj\Debug\TurnDev.exe
+C:\Users\Dubst\source\repos\TurnDev\TurnDev\obj\Debug\TurnDev.pdb

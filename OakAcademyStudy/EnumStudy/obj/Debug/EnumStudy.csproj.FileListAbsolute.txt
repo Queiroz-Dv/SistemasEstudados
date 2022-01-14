@@ -1,0 +1,10 @@
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\bin\Debug\EnumStudy.exe.config
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\bin\Debug\EnumStudy.exe
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\bin\Debug\EnumStudy.pdb
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.Form1.resources
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.Properties.Resources.resources
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.exe
+C:\Users\Dubst\source\repos\InheritanceStudy\EnumStudy\obj\Debug\EnumStudy.pdb

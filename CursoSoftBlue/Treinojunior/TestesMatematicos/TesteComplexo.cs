@@ -48,7 +48,7 @@ namespace Treinojunior
                     if (res == 0 || tot == 0)
                     {
                         Console.WriteLine("Número inválido. " +
-                        "Por favor digite números acima de 0");
+                        "\nPor favor digite números acima de 0");
                     }
                     else
                     {

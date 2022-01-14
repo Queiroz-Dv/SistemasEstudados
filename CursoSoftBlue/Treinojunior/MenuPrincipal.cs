@@ -78,7 +78,7 @@ namespace Treinojunior
                 }
                 else if (valor == TESTE_SWITCH_COMPLEXO)
                 {
-                    TesteComplexoSwitch.ComplexoSwitch();
+                    TesteComplexoSwitch.Menu();
                 }
                 else if (valor == TESTE_VALIDADE)
                 {

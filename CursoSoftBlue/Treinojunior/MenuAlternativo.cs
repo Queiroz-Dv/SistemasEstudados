@@ -1,5 +1,6 @@
 ﻿using System;
 using Treinojunior.POO;
+using Treinojunior.TestesBásicos;
 using Treinojunior.TestesMatematicos;
 using Treinojunior.TestesMatematicos.ModelosMedia;
 
@@ -13,12 +14,20 @@ namespace Treinojunior
             while (true)
             {
                 Console.Clear();
-                string corpoMenu = "Olá usuário, bem vindo ao sistema de testes matemáticos!\n" +
-                    "\n\n" +
-                    "\n           Digite uma das opções abaixo:" +
-                    "\n           0 - Voltar" +
-                    "\n           1 - Teste de Media" +
-                    "\n           2 - Banco Matemático";
+                string corpoMenu = 
+                    "  ===================================================================" +
+                    "\n||    Olá usuário, bem vindo ao sistema de testes matemáticos!    ||" +
+                    "\n||================================================================||" +
+                    "\n||       |||||||    Digite uma das opções abaixo    |||||||       ||" +
+                    "\n||================================================================||" +
+                    "\n||================================================================||" +
+                    "\n||    °      °   ||0 - Voltar                       ||   °   °    ||" +
+                    "\n||  °   °  °   ° ||1 - Teste de Media               || °   °   °  ||" +
+                    "\n||    °      °   ||2 - Banco Matemático             ||   °   °    ||" +
+                    "\n||       °       ||3 - Exemplo de mátricula de aluno|| °   °   °  ||" +
+                    "\n||     °   °     ||10 - Próxima página              ||   °   °    ||" +
+                    "\n||       °       ||=================================||     °      ||" +
+                    "\n===================================================================";
                 Console.WriteLine(corpoMenu);
                 int res = int.Parse(Console.ReadLine());
 
@@ -34,6 +43,10 @@ namespace Treinojunior
                 else if (res == 2)
                 {
                     EntradaBanco.Entre();
+                }
+                else if (res == 3)
+                {
+                    MatriculaAluno.Menu();
                 }
                 else
                 {

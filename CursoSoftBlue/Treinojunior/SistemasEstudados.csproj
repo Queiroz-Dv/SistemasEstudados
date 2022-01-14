@@ -51,11 +51,13 @@
     <Compile Include="BancoMatematico\OperacoesBancarias\Saque.cs" />
     <Compile Include="BancoMatematico\OperacoesBancarias\Transfere.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\BaseOp.cs" />
+    <Compile Include="Base\BasePessoa.cs" />
     <Compile Include="MenuPrincipal.cs" />
     <Compile Include="BancoMatematico\EntradaBanco.cs" />
     <Compile Include="MenuAlternativo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestesBásicos\MatriculaAluno.cs" />
     <Compile Include="TestesMatematicos\MediaComum.cs" />
     <Compile Include="TestesMatematicos\TesteContinuo.cs" />
     <Compile Include="TestesMatematicos\TesteComplexo.cs" />

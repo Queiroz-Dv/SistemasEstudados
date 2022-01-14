@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace SistemasGraficos
 {
-    public partial class Form1 : Form
+    public partial class frmTrocaDeValores : Form
     {
-        public Form1()
+        public frmTrocaDeValores()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string aux = txtPrimeiroValor.Text;
+            txtPrimeiroValor.Text = txtSegundoValor.Text;
+            txtSegundoValor.Text = aux;
+
+            MessageBox.Show("Troca de valores realizada com sucesso.","Informação", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+                
         }
     }
 }

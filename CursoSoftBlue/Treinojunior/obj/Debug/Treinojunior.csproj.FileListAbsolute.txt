@@ -1,0 +1,14 @@
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\bin\Debug\Treinojunior.exe.config
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\bin\Debug\Treinojunior.exe
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\bin\Debug\Treinojunior.pdb
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\obj\Debug\Treinojunior.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\obj\Debug\Treinojunior.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\obj\Debug\Treinojunior.exe
+C:\Users\Dubst\source\repos\Calculo_media\Treinojunior\obj\Debug\Treinojunior.pdb
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe.config
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.pdb
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.exe
+C:\Users\Dubst\source\repos\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.pdb

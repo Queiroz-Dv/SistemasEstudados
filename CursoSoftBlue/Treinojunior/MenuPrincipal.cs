@@ -1,28 +1,15 @@
 ﻿using System;
-using Treinojunior.POO;
 
 namespace Treinojunior
 {
     class MenuPrincipal
     {
-        public const int TROCA_MENU = 0;
-        public const int TESTE_CONTADOR_SEQUENCIAL = 1;
-        public const int TESTE_PULAR_NUMERO = 2;
-        public const int TESTE_CONTINUO = 3;
-        public const int TESTE_TABUADA = 4;
-        public const int TESTE_FATORIAL = 5;
-        public const int TESTE_FIBONACCI = 6;
-        public const int TESTE_IF_COMPLEXO = 7;
-        public const int TESTE_SWITCH_COMPLEXO = 8;
-        public const int TESTE_VALIDADE = 9;
-        public const int FECHAR = 10;
-
         public static void Criar()
 
         {
             while (true)
             {
-                
+                Console.Clear();
                 string mensagem = "Olá usuário, bem vindo ao sistema de testes matemáticos!\n" +
                     "\n\n" +
                     "\n           Digite uma das opções abaixo:" +
@@ -41,58 +28,51 @@ namespace Treinojunior
                 Console.WriteLine(mensagem);
 
                 int valor = int.Parse(Console.ReadLine());
-                
-                if (TROCA_MENU== valor)
+                switch (valor)
                 {
-                    Console.Clear();
-                    MenuAlternativo.MontarMenu();
+                    case 0:
+                        MenuAlternativo.Menu();
+                        continue;
+                    case 1:
+                        TesteSequencial.Menu();
+                        continue;
+                    case 2:
+                        PulaNumero.Menu();
+                        continue;
+                    case 3:
+                        TesteContinuo.Menu();
+                        continue;
+                    case 4:
+                        TesteTabuada.Menu();
+                        continue;
+                    case 5:
+                        TesteFatoracao.Menu();
+                        continue;
+                    case 6:
+                        TesteFibo.Menu();
+                        continue;
+                    case 7:
+                        TesteComplexo.Menu();
+                        continue;
+                    case 8:
+                        TesteComplexoSwitch.Menu();
+                        continue;
+                    case 9:
+                        TesteValidacao.Menu();
+                        continue;
+                    case 10:
+                        Console.WriteLine("Tem certeza que deseja sair do sistema?" +
+                            "\nDigite 1 para sim e 0 para não");
+                        int s = int.Parse(Console.ReadLine());
+                        if (s == 1)
+                        { break; }
+                        else
+                        { continue; }
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        continue;
                 }
-                else if (valor == TESTE_CONTADOR_SEQUENCIAL)
-                {
-                    TesteSequencial.Menu();
-                }
-                else if (valor == TESTE_PULAR_NUMERO)
-                {
-                    PulaNumero.Menu();
-                }
-                else if (valor == TESTE_CONTINUO)
-                {
-                    TesteContinuo.Menu();
-                }
-                else if (valor == TESTE_TABUADA)
-                {
-                    TesteTabuada.Menu();
-                }
-                else if (valor == TESTE_FATORIAL)
-                {
-                    TesteFatoracao.Menu();
-                }
-                else if (valor == TESTE_FIBONACCI)
-                {
-                    TesteFibo.Menu();
-                }
-                else if (valor == TESTE_IF_COMPLEXO)
-                {
-                    TesteComplexo.Menu();
-
-                }
-                else if (valor == TESTE_SWITCH_COMPLEXO)
-                {
-                    TesteComplexoSwitch.Menu();
-                }
-                else if (valor == TESTE_VALIDADE)
-                {
-                    TesteValidacao.Valida();
-                    
-                }
-                else if(valor == FECHAR)
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Opção Inválida");
-                }
+                break;
             }
         }
     }

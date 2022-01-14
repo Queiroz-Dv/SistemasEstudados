@@ -56,8 +56,7 @@
     <Compile Include="MenuAlternativo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestesMatematicos\ModelosMedia\MediaComum.cs" />
-    <Compile Include="TestesMatematicos\ModelosMedia\MediaPersonalizado.cs" />
+    <Compile Include="TestesMatematicos\MediaComum.cs" />
     <Compile Include="TestesMatematicos\TesteContinuo.cs" />
     <Compile Include="TestesMatematicos\TesteComplexo.cs" />
     <Compile Include="TestesMatematicos\TesteComplexoSwitch.cs" />
@@ -65,7 +64,6 @@
     <Compile Include="TestesMatematicos\PulaNumeros.cs" />
     <Compile Include="TestesMatematicos\TesteFatoracao.cs" />
     <Compile Include="TestesMatematicos\TesteFibo.cs" />
-    <Compile Include="TestesMatematicos\TesteMedia.cs" />
     <Compile Include="TestesMatematicos\Tabuada.cs" />
     <Compile Include="TestesMatematicos\TesteValidacao.cs" />
   </ItemGroup>

@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Treinojunior.POO;
 using Treinojunior.TestesMatematicos;
+using Treinojunior.TestesMatematicos.ModelosMedia;
 
 namespace Treinojunior
 {
     class MenuAlternativo
     {
-        public static void MontarMenu()
+        public static void Menu()
         {
+
             while (true)
             {
+                Console.Clear();
                 string corpoMenu = "Olá usuário, bem vindo ao sistema de testes matemáticos!\n" +
                     "\n\n" +
                     "\n           Digite uma das opções abaixo:" +
@@ -30,11 +29,17 @@ namespace Treinojunior
                 }
                 else if (res == 1)
                 {
-                    TesteMedia.Media();
+                    MediaComum.Menu();
                 }
                 else if (res == 2)
                 {
                     EntradaBanco.Entre();
+                }
+                else
+                {
+                    Console.WriteLine("Opção inválida.");
+                    Console.ReadKey();
+                    continue;
                 }
             }
         }

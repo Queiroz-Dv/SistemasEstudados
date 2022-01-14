@@ -4,20 +4,12 @@ namespace Treinojunior
 {
     class TesteValidacao
     {
-        public static void Valida()
+        public static void Menu()
         {
 
 
             Console.WriteLine("Seja bem-vindo ao teste de validade");
-
-            Console.WriteLine("Digite o dia: ");
-            int dia = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o mês: ");
-            int mes = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o Ano: ");
-            int ano = int.Parse(Console.ReadLine());
+            ColetaDados(out int dia, out int mes, out int ano);
 
             if (ano < 1900 || ano > 2999)
             {
@@ -42,6 +34,16 @@ namespace Treinojunior
                 }
             }
 
+        }
+
+        private static void ColetaDados(out int dia, out int mes, out int ano)
+        {
+            Console.WriteLine("Digite o dia: ");
+            dia = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o mês: ");
+            mes = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o Ano: ");
+            ano = int.Parse(Console.ReadLine());
         }
     }
 }

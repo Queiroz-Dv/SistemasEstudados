@@ -7,7 +7,6 @@ namespace Treinojunior
     {
         static void Main(string[] args)
         {
-            //Teste
             MenuPrincipal.Criar();
         }
     }

@@ -6,7 +6,7 @@ namespace Treinojunior.POO
 {
     class EntradaBanco : BaseOP
     {
-        public static void Entre()
+        public static void Menu()
         {
             while (true)
             {

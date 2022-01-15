@@ -1,5 +1,4 @@
 using System;
-using Treinojunior.POO;
 
 namespace Treinojunior
 {
@@ -8,13 +7,13 @@ namespace Treinojunior
         static void Main(string[] args)
         {
             MenuPrincipal obj = new MenuPrincipal();
+            PaginaDois paginaDois = new PaginaDois();
             while (true)
             {
-
                 switch (obj.Criar())
                 {
                     case 0:
-                        PaginaDois.Menu();
+                        paginaDois.Menu();
                         break;
                     case 1:
                         TesteSequencial.Menu();

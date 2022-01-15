@@ -1,12 +1,11 @@
 ﻿using System;
 using Treinojunior.POO;
 using Treinojunior.TestesBásicos;
-using Treinojunior.TestesMatematicos;
 using Treinojunior.TestesMatematicos.ModelosMedia;
 
 namespace Treinojunior
 {
-    class MenuAlternativo
+    class PaginaDois
     {
         public static void Menu()
         {
@@ -20,8 +19,7 @@ namespace Treinojunior
                     "\n||================================================================||" +
                     "\n||       |||||||    Digite uma das opções abaixo    |||||||       ||" +
                     "\n||================================================================||" +
-                    "\n||================================================================||" +
-                    "\n||    °      °   ||0 - Voltar                       ||   °   °    ||" +
+                    "\n||    °      °   ||0 - Voltar Página                ||   °   °    ||" +
                     "\n||  °   °  °   ° ||1 - Teste de Media               || °   °   °  ||" +
                     "\n||    °      °   ||2 - Banco Matemático             ||   °   °    ||" +
                     "\n||       °       ||3 - Exemplo de mátricula de aluno|| °   °   °  ||" +
@@ -55,6 +53,7 @@ namespace Treinojunior
                     continue;
                 }
             }
+            
         }
     }
 }

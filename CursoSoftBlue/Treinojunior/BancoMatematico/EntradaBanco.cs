@@ -49,7 +49,7 @@ namespace Treinojunior.POO
                 }
                 else
                 {
-                    MenuPrincipal.Criar();
+                    //MenuPrincipal entrar = ();
                 }
             }
         }

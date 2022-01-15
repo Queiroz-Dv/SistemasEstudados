@@ -4,16 +4,23 @@ namespace Treinojunior
 {
     class MenuPrincipal
     {
-        public static void Criar()
 
+        public int Criar()
         {
+            //Tamanho da tela
+            Console.SetWindowSize(100, 20);
+            //Nome de cima da tela
+            Console.Title = "Queiroz Sistemas[v1.0]";
+            Console.ForegroundColor = ConsoleColor.White;
             while (true)
             {
                 Console.Clear();
-                string mensagem = "Olá usuário, bem vindo ao sistema de testes matemáticos!\n" +
+                Centralizar("==== Diário de Sistemas ====\n");
+                Console.BackgroundColor = ConsoleColor.DarkGray;
+                string mensagem = "Olá usuário, bem vindo ao Diário de Sistemas!\n" +
                     "\n\n" +
                     "\n           Digite uma das opções abaixo:" +
-                    "\n           0 - Outras funções" +
+                    "\n           0 - Próxima página" +
                     "\n           1 - Teste Contador Sequencial" +
                     "\n           2 - Teste Pular Números" +
                     "\n           3 - Teste Contínuo" +
@@ -23,57 +30,20 @@ namespace Treinojunior
                     "\n           7 - Teste If Complexo" +
                     "\n           8 - Teste Switch Complexo" +
                     "\n           9 - Teste Validade" +
-                    "\n           10 - Fechar programa";
+                    "\n          10 - Fechar progarama";
 
                 Console.WriteLine(mensagem);
 
                 int valor = int.Parse(Console.ReadLine());
-                switch (valor)
-                {
-                    case 0:
-                        MenuAlternativo.Menu();
-                        continue;
-                    case 1:
-                        TesteSequencial.Menu();
-                        continue;
-                    case 2:
-                        PulaNumero.Menu();
-                        continue;
-                    case 3:
-                        TesteContinuo.Menu();
-                        continue;
-                    case 4:
-                        TesteTabuada.Menu();
-                        continue;
-                    case 5:
-                        TesteFatoracao.Menu();
-                        continue;
-                    case 6:
-                        TesteFibo.Menu();
-                        continue;
-                    case 7:
-                        TesteComplexo.Menu();
-                        continue;
-                    case 8:
-                        TesteComplexoSwitch.Menu();
-                        continue;
-                    case 9:
-                        TesteValidacao.Menu();
-                        continue;
-                    case 10:
-                        Console.WriteLine("Tem certeza que deseja sair do sistema?" +
-                            "\nDigite 1 para sim e 0 para não");
-                        int s = int.Parse(Console.ReadLine());
-                        if (s == 1)
-                        { break; }
-                        else
-                        { continue; }
-                    default:
-                        Console.WriteLine("Opção inválida");
-                        continue;
-                }
-                break;
+                return valor;
             }
+        }
+        //Método de cebtralização
+        public int Centralizar(string centre) 
+        {
+            int espacos = 50 + (centre.Length / 2);
+            Console.WriteLine(centre.PadLeft(espacos));
+            return espacos;
         }
     }
 }

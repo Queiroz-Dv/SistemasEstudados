@@ -28,7 +28,7 @@ namespace Treinojunior.TestesBásicos
                 {
 
                     Console.Clear();
-                    string Categoria;
+                    //string Categoria;
                     BasePessoa aluno = new BasePessoa();
 
                     Console.WriteLine("Digite o nome: ");

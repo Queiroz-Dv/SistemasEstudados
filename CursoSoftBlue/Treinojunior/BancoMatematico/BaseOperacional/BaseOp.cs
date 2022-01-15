@@ -9,8 +9,7 @@ namespace Treinojunior.Banco
     public abstract class BaseOP : IPessoa
     {
         public BaseOP(int id, string nome, string sobrenome, string datanasc,
-            string telefone, string cpf, string endereco)
-        {
+            string telefone, string cpf, string endereco){
             this.ID = id;
             this.Nome = nome;
             this.Sobrenome = sobrenome;

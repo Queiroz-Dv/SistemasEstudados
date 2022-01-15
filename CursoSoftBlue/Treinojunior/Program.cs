@@ -2,7 +2,7 @@ using System;
 
 namespace Treinojunior
 {
-    class Program
+    class Program: MenuPrincipal
     {
         static void Main(string[] args)
         {
@@ -44,14 +44,14 @@ namespace Treinojunior
                         break;
                     case 10:
                         Console.WriteLine("\n");
-                        obj.Centralizar("Obrigado por ver meus estudos");
-                        obj.Centralizar("Pressione qualquer tecla para fechar a janela");
+                        Centralizar("Obrigado por ver meus estudos");
+                        Centralizar("Pressione qualquer tecla para fechar a janela");
                         Console.ReadKey();
                         Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("\n");
-                        obj.Centralizar("Opção inválida | Tente novamente!");
+                        Centralizar("Opção inválida | Tente novamente!");
                         break;
                 }
                 Console.Clear();

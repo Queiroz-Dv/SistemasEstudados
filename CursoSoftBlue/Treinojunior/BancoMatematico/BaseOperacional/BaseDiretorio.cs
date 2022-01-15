@@ -1,23 +1,18 @@
 ﻿using System;
-using System.IO;
 using System.Configuration;
-using System.Collections.Specialized;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace Diretorio
 {
     class BaseArquivos
     {
-        private static string arquivoPath()
+        private static string ArquivoPath()
         {
             return ConfigurationManager.AppSettings["PathArquivos"];
         }
         public static void Leia( int idArquivo)
         {
-            string path = arquivoPath() + "arc" + idArquivo + ".txt";
+            string path = ArquivoPath() + "arc" + idArquivo + ".txt";
             if (File.Exists(path))
             {
                 using (StreamReader arquivo = File.OpenText(path))
@@ -30,7 +25,7 @@ namespace Diretorio
                 }
             }
             Console.WriteLine("+++++++++++++++++");
-            string path2 = arquivoPath() + (idArquivo + 1) + ".txt";
+            string path2 = ArquivoPath() + (idArquivo + 1) + ".txt";
 
             if (File.Exists(path2))
             {

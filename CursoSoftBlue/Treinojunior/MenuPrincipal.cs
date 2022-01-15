@@ -2,7 +2,7 @@
 
 namespace Treinojunior
 {
-    class MenuPrincipal
+    public class MenuPrincipal
     {
         public MenuPrincipal()
         {
@@ -12,10 +12,10 @@ namespace Treinojunior
             Console.Title = "Queiroz Sistemas[v1.0]";
             Console.ForegroundColor = ConsoleColor.White;
         }
-        public virtual int Criar()
+        public int Criar()
         {
             Console.Clear();
-            Centralizar("==== Bem Vindo ao Diário de Sistemas ====\n");
+            Centralizar("==== Bem Vindo ao Portfólio de Sistemas Queiroz ====\n");
             Console.BackgroundColor = ConsoleColor.DarkGray;
             Linha();
             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
@@ -34,7 +34,7 @@ namespace Treinojunior
             Console.WriteLine("|{0}|", AlinhaTexto(35, "  ============================== "));
             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
             Console.BackgroundColor = ConsoleColor.Black;
-            Console.Write("\n{0}", AlinhaTexto(36, "Escolha uma das opções de estudo : ", "L"));
+            Console.Write("\n{0}", AlinhaTexto(36, "Escolha uma das opções de estudos realizados : ", "L"));
             try
             {
                 return (int.Parse(Console.ReadLine()));
@@ -45,7 +45,7 @@ namespace Treinojunior
             }
         }
         //Configurações gráficas
-        public string AlinhaTexto(int EspacosParaAdicionar, string Msg, string Alinhamento = "R")
+        public static string AlinhaTexto(int EspacosParaAdicionar, string Msg, string Alinhamento = "R")
         {
             if (Alinhamento == "L")
                 Msg = Msg.PadLeft(EspacosParaAdicionar + Msg.Length);
@@ -56,11 +56,11 @@ namespace Treinojunior
             }
             return Msg;
         }
-        public void Linha()
+        public static void Linha()
         {
             Console.WriteLine("+--------------------------------------------------------------------------------------------------+");
         }
-        public int Centralizar(string centre)
+        public static int Centralizar(string centre)
         {
             int espacos = 50 + (centre.Length / 2);
             Console.WriteLine(centre.PadLeft(espacos));

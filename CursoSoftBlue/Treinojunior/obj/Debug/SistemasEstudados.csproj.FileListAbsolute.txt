@@ -1,10 +1,6 @@
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csprojAssemblyReference.cache
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csproj.CoreCompileInputs.cache
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe.config
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.pdb
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.exe
-C:\Users\Dubst\Source\Repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe.config
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Treinojunior.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Microsoft.Win32.Primitives.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\netstandard.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\System.AppContext.dll
@@ -106,4 +102,7 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojun
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\System.Reflection.TypeExtensions.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\Xaml.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.exe.config
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csproj.CoreCompileInputs.cache
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csproj.CopyComplete
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.pdb

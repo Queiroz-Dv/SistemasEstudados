@@ -10,7 +10,7 @@ namespace Treinojunior.TestesBásicos
             //Tamanho da tela
             Console.SetWindowSize(100, 20);
             //Nome de cima da tela
-            Console.Title = "Queiroz Sistemas[v1.0]";
+            Console.Title = "Matricula Aluno";
             Console.ForegroundColor = ConsoleColor.White;
         }
 

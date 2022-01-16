@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbaPaginaDois\CalculoPesoIdeal.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\BaseDiretorio.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\Cliente.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\IPessoa.cs" />
@@ -74,17 +75,17 @@
     <Compile Include="PaginaDois.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestesBásicos\MatriculaAluno.cs" />
-    <Compile Include="TestesMatematicos\MediaComum.cs" />
-    <Compile Include="TestesMatematicos\TesteContinuo.cs" />
-    <Compile Include="TestesMatematicos\TesteComplexo.cs" />
-    <Compile Include="TestesMatematicos\TesteComplexoSwitch.cs" />
-    <Compile Include="TestesMatematicos\ContadorSequencial.cs" />
-    <Compile Include="TestesMatematicos\PulaNumeros.cs" />
-    <Compile Include="TestesMatematicos\TesteFatoracao.cs" />
-    <Compile Include="TestesMatematicos\TesteFibo.cs" />
-    <Compile Include="TestesMatematicos\Tabuada.cs" />
-    <Compile Include="TestesMatematicos\TesteValidacao.cs" />
+    <Compile Include="AbaPaginaDois\MatriculaAluno.cs" />
+    <Compile Include="AbaMenuPrincipal\MediaComum.cs" />
+    <Compile Include="AbaMenuPrincipal\TesteContinuo.cs" />
+    <Compile Include="AbaMenuPrincipal\TesteComplexo.cs" />
+    <Compile Include="AbaMenuPrincipal\TesteComplexoSwitch.cs" />
+    <Compile Include="AbaMenuPrincipal\ContadorSequencial.cs" />
+    <Compile Include="AbaMenuPrincipal\PulaNumeros.cs" />
+    <Compile Include="AbaMenuPrincipal\TesteFatoracao.cs" />
+    <Compile Include="AbaMenuPrincipal\TesteFibo.cs" />
+    <Compile Include="AbaMenuPrincipal\Tabuada.cs" />
+    <Compile Include="AbaMenuPrincipal\TesteValidacao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

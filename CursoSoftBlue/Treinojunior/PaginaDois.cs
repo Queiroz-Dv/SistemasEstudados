@@ -1,4 +1,5 @@
 ﻿using System;
+using Treinojunior.AbaPaginaDois;
 using Treinojunior.POO;
 using Treinojunior.TestesBásicos;
 using Treinojunior.TestesMatematicos.ModelosMedia;
@@ -31,6 +32,7 @@ namespace Treinojunior
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste de Media            ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Banco Matemático          ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Matricula de aluno        ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Calcular Peso             ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Próxima página           ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "  ============================== "));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
@@ -53,6 +55,9 @@ namespace Treinojunior
                             continue;
                         case 3:
                             MatriculaAluno.Menu();
+                            continue;
+                        case 4:
+                            CalculoPesoIdeal.Menu();
                             continue;
                         case 10:
                             break;

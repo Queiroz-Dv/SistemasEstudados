@@ -10,6 +10,7 @@ namespace Treinojunior.Base
     {
         public string Nome { get; set; }
         public string AnoNascimento { get; set; }
+        public char Sexo { get; set; }
 
     }
 }

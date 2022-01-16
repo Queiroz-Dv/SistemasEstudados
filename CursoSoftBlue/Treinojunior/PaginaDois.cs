@@ -33,7 +33,7 @@ namespace Treinojunior
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Banco Matemático          ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Matricula de aluno        ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Calcular Peso             ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Próxima página           ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Próxima página >>        ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "  ============================== "));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Console.BackgroundColor = ConsoleColor.Black;

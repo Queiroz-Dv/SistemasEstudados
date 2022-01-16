@@ -74,6 +74,7 @@
     <Compile Include="BancoMatematico\EntradaBanco.cs" />
     <Compile Include="PaginaDois.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjetosMedios\CalculoSalario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AbaPaginaDois\MatriculaAluno.cs" />
     <Compile Include="AbaMenuPrincipal\MediaComum.cs" />

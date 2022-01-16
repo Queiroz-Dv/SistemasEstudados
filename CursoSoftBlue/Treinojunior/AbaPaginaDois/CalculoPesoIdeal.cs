@@ -66,9 +66,8 @@ namespace Treinojunior.AbaPaginaDois
 
                             if (sexo == 'M')
                             {
-                                double calc = (72.7 * altura) - 58;
-                                int pesoIdeal = Convert.ToInt32(calc);
-                                Centralizar($"Seu peso ideal é {pesoIdeal}");
+                                double pesoIdeal = (72.7 * altura) - 58;
+                                Centralizar($"Seu peso ideal é {pesoIdeal.ToString("N")}");
                                 Centralizar("Pressione qualquer tecla para voltrar ao menu principal.");
                                 Console.ReadKey();
                                 Console.Clear();
@@ -77,9 +76,8 @@ namespace Treinojunior.AbaPaginaDois
                             }
                             else if (sexo == 'F')
                             {
-                                double calc = (62.1 * altura) - 44.7;
-                                int pesoIdeal = Convert.ToInt32(calc);
-                                Centralizar($"Seu peso ideal é {pesoIdeal}");
+                                double pesoIdeal = (62.1 * altura) - 44.7;
+                                Centralizar($"Seu peso ideal é {pesoIdeal.ToString("N")}");
                                 Centralizar("Pressione qualquer tecla para voltrar ao menu principal.");
                                 Console.ReadKey();
                                 Console.Clear();

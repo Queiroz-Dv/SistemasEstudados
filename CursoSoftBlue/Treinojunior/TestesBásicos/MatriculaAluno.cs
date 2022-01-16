@@ -46,20 +46,56 @@ namespace Treinojunior.TestesBásicos
                             string Categoria;
                             BasePessoa aluno = new BasePessoa();
 
-                            Console.WriteLine("Digite o nome: ");
+                            Console.BackgroundColor = ConsoleColor.DarkGray;
+                            Linha();
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, "     Digite o nome:"));
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.BackgroundColor = ConsoleColor.Black;
                             aluno.Nome = Console.ReadLine();
                             string nome = aluno.Nome;
 
-                            Console.WriteLine($"Digite o ano de nascimento {nome}: ");
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.DarkGray;
+                            Linha();
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o nome: {nome}                         "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o ano do seu nascimento:               "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.BackgroundColor = ConsoleColor.Black;
                             aluno.AnoNascimento = Console.ReadLine();
                             string anoNascimento = aluno.AnoNascimento;
 
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.DarkGray;
+                            Linha();
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o nome: {nome}                                  "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o ano do seu nascimento: {anoNascimento}        "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o ano do seu último aniversário:                "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.BackgroundColor = ConsoleColor.Black;
                             Console.WriteLine($"Digite o ano do seu último aniversário {nome}: ");
                             string anoUltimoAniversario = Console.ReadLine();
 
+                            Console.Clear();
+                            Console.BackgroundColor = ConsoleColor.DarkGray;
+                            Linha();
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o nome: {nome}                                         "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o ano do seu nascimento: {anoNascimento}                "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $" Digite o ano do seu último aniversário: {anoUltimoAniversario} "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                            Console.BackgroundColor = ConsoleColor.Black;
+
+                            Centralizar("Dados obtidos.");
+                            Centralizar("Aperte qualquer tecla para analisarmos.");
+                            Console.ReadKey();
+                            Console.Clear();
+
                             if (anoNascimento.Trim().Length < 4 || anoUltimoAniversario.Trim().Length < 4)
                             {
-                                Console.WriteLine("É preciso informar o ano com 4 digitos");
+                                Centralizar("É preciso informar o ano com 4 digitos");
                                 Console.ReadKey();
                                 Console.Clear();
                                 continue;
@@ -68,7 +104,7 @@ namespace Treinojunior.TestesBásicos
                                 Convert.ToInt32(anoUltimoAniversario) <=
                                 Convert.ToInt32(anoNascimento))
                             {
-                                Console.WriteLine("O ano do último aniversãrio deve" +
+                                Centralizar("O ano do último aniversário deve" +
                                                   "se superior ao ano de nascimento");
 
                                 Console.ReadKey();
@@ -77,62 +113,64 @@ namespace Treinojunior.TestesBásicos
                             }
                             if (nome == String.Empty || anoNascimento == String.Empty || anoUltimoAniversario == String.Empty)
                             {
-                                Console.WriteLine("Todos os dados devem ser informados.");
+                                Centralizar("Todos os dados devem ser informados.");
                                 Console.ReadKey();
                                 Console.Clear();
                                 continue;
                             }
                             else
                             {
+                               // TimeSpan tsQuantidadeDias = DateTime.Now.Date - Convert.ToDateTime(anoNascimento);
+                               // int idade = (tsQuantidadeDias.Days / 365);
                                 int idade = Convert.ToInt32(anoUltimoAniversario) - Convert.ToInt32(anoNascimento);
                                 if (idade > 17)
                                 {
-                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Adulto");
+                                    Centralizar(Categoria = $"{nome} esta na categoria Adulto");
                                     Centralizar($"Matrícula de {nome} realizada com sucesso.");
-                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Centralizar("Pressione qualquer tecla para voltar ao menu.");
                                     Console.ReadKey();
                                     Console.Clear();
                                     break;
                                 }
                                 else if (idade > 13)
                                 {
-                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Juvenil B");
+                                    Centralizar(Categoria = $"{nome} esta na categoria Juvenil B");
                                     Centralizar($"Matrícula de {nome} realizada com sucesso.");
-                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Centralizar("Pressione qualquer tecla para voltar ao menu.");
                                     Console.ReadKey();
                                     Console.Clear();
                                     break;
                                 }
                                 else if (idade > 10)
                                 {
-                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Juvenil A");
+                                    Centralizar(Categoria = $"{nome} esta na categoria Juvenil A");
                                     Centralizar($"Matrícula de {nome} realizada com sucesso.");
-                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Centralizar("Pressione qualquer tecla para voltar ao menu.");
                                     Console.ReadKey();
                                     Console.Clear();
                                     break;
                                 }
                                 else if (idade > 7)
                                 {
-                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Infatil B");
+                                    Centralizar(Categoria = $"{nome} esta na categoria Infatil B");
                                     Centralizar($"Matrícula de {nome} realizada com sucesso.");
-                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Centralizar("Pressione qualquer tecla para voltar ao menu.");
                                     Console.ReadKey();
                                     Console.Clear();
                                     break;
                                 }
                                 else if (idade >= 5)
                                 {
-                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Infatil A");
+                                    Centralizar(Categoria = $"{nome} esta na categoria Infatil A");
                                     Centralizar($"Matrícula de {nome} realizada com sucesso.");
-                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Centralizar("Pressione qualquer tecla para voltar ao menu.");
                                     Console.ReadKey();
                                     Console.Clear();
                                     break;
                                 }
                                 else
                                 {
-                                    Console.WriteLine(Categoria = $"Não existe categoria");
+                                    Centralizar(Categoria = $"Não existe categoria");
                                     Console.ReadKey();
                                     Console.Clear();
                                 }

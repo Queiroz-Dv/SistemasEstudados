@@ -22,6 +22,7 @@ namespace Treinojunior
             {
                 Console.Clear();
                 Centralizar("==== Bem Vindo ao Portfólio de Sistemas Queiroz ====\n");
+                Centralizar("Hoje é " + DateTime.Now.ToLongDateString());
                 Console.BackgroundColor = ConsoleColor.DarkGray;
                 Linha();
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));

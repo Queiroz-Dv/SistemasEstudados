@@ -36,14 +36,14 @@ namespace Treinojunior.TestesBásicos
                     switch (valor)
                     {
                         case 0:
-                            Centralizar("Obrigado por testar nosso sistema. Volte sempre!");
+                            Centralizar("Obrigado por testar meu sistema. Volte sempre!");
                             Centralizar("Pressione qualquer tecla para voltar ao menu principal");
                             Console.ReadKey();
                             Console.Clear();
                             break;
                         case 1:
                             Console.Clear();
-                            //string Categoria;
+                            string Categoria;
                             BasePessoa aluno = new BasePessoa();
 
                             Console.WriteLine("Digite o nome: ");
@@ -70,13 +70,78 @@ namespace Treinojunior.TestesBásicos
                             {
                                 Console.WriteLine("O ano do último aniversãrio deve" +
                                                   "se superior ao ano de nascimento");
+
                                 Console.ReadKey();
                                 Console.Clear();
                                 continue;
                             }
+                            if (nome == String.Empty || anoNascimento == String.Empty || anoUltimoAniversario == String.Empty)
+                            {
+                                Console.WriteLine("Todos os dados devem ser informados.");
+                                Console.ReadKey();
+                                Console.Clear();
+                                continue;
+                            }
+                            else
+                            {
+                                int idade = Convert.ToInt32(anoUltimoAniversario) - Convert.ToInt32(anoNascimento);
+                                if (idade > 17)
+                                {
+                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Adulto");
+                                    Centralizar($"Matrícula de {nome} realizada com sucesso.");
+                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                }
+                                else if (idade > 13)
+                                {
+                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Juvenil B");
+                                    Centralizar($"Matrícula de {nome} realizada com sucesso.");
+                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                }
+                                else if (idade > 10)
+                                {
+                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Juvenil A");
+                                    Centralizar($"Matrícula de {nome} realizada com sucesso.");
+                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                }
+                                else if (idade > 7)
+                                {
+                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Infatil B");
+                                    Centralizar($"Matrícula de {nome} realizada com sucesso.");
+                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                }
+                                else if (idade >= 5)
+                                {
+                                    Console.WriteLine(Categoria = $"{nome} esta na categoria Infatil A");
+                                    Centralizar($"Matrícula de {nome} realizada com sucesso.");
+                                    Centralizar("Pressione qualquer teckla´para voltar ao menu.");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine(Categoria = $"Não existe categoria");
+                                    Console.ReadKey();
+                                    Console.Clear();
+                                }
+                            }
                             continue;
                         default:
                             Centralizar("Opção inválida");
+                            Console.ReadKey();
+                            Console.Clear();
                             continue;
                     }
                     return valor;

@@ -77,7 +77,7 @@ namespace Treinojunior.AbaPaginaDois
                             else if (sexo == 'F')
                             {
                                 double pesoIdeal = (62.1 * altura) - 44.7;
-                                Centralizar($"Seu peso ideal é {pesoIdeal.ToString("N")}");
+                                Centralizar($"Seu peso ideal é {pesoIdeal.ToString("C")}");
                                 Centralizar("Pressione qualquer tecla para voltrar ao menu principal.");
                                 Console.ReadKey();
                                 Console.Clear();

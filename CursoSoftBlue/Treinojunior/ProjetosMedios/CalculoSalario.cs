@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Treinojunior.ProjetosMedios
 {
@@ -91,14 +92,20 @@ namespace Treinojunior.ProjetosMedios
                             string getTurnos = Turnos();
                             if (getTurnos == "Manhã" || getTurnos == "Tarde" || getTurnos == "Noite")
                             {
-                                Centralizar("Opção inválida. Escolha os dados corretamente");
-                                continue;
+                                CalculoSalario calcular = new CalculoSalario();
+                                calcular.Processamento(getCategorias, getTurnos, getHorasTrabalhadas, getSalarioMinimo);
+                                Console.ReadKey();
+                                Centralizar("Pressione qualquer tecla para voltar ao menu");
+                                Console.ReadKey();
+                                Console.Clear();
+                                break;
                             }
                             else
                             {
-                                CalculoSalario calcular = new CalculoSalario();
-                                calcular.Processamento(getCategorias, getTurnos, getHorasTrabalhadas, getSalarioMinimo);
-
+                                Centralizar("Opção inválida. Escolha os dados corretamente");
+                                Centralizar("Pressione qualquer tecla para voltar ao menu principal");
+                                Console.ReadKey();
+                                continue;
                             }
                     }
                     return valor;
@@ -109,8 +116,10 @@ namespace Treinojunior.ProjetosMedios
                 }
             }
         }
-        private void Processamento(string categoria, string turno, double horasTrabalhadas, double valorSalarioMinimo)
+        private void Processamento(string categoria, string turno,
+                                  double horasTrabalhadas, double valorSalarioMinimo)
         {
+
             double valorCoeficiente = GetCoeficiente(turno, valorSalarioMinimo);
             double valorGratificacao = GetGratificacao(turno, horasTrabalhadas);
             double valorSalarioBruto = horasTrabalhadas * valorCoeficiente;
@@ -121,35 +130,75 @@ namespace Treinojunior.ProjetosMedios
             ApresentarResultados(valorCoeficiente, valorSalarioBruto,
                                  valorImposto, valorGratificacao,
                                  valorAuxilioAlimentacao, valorSalarioLiquido);
-
         }
 
-        private void ApresentarResultados(double valorCoeficiente, double valorSalarioBruto, double valorImposto, double valorGratificacao, double valorAuxilioAlimentacao, double valorSalarioLiquido)
+        private void ApresentarResultados(double valorCoeficiente, double valorSalarioBruto,
+                                          double valorImposto, double valorGratificacao,
+                                          double valorAuxilioAlimentacao, double valorSalarioLiquido)
         {
-            throw new NotImplementedException();
+            string situacaoEstagiario = GetSituacaoEstagiario(valorSalarioLiquido);
+            Console.Clear();
+            Centralizar("Valor do Coeficiente: " + valorCoeficiente.ToString("N"));
+            Centralizar("Salário Bruto: " + valorSalarioBruto.ToString("N"));
+            Centralizar("Valor do Imposto: " + valorImposto.ToString("N"));
+            Centralizar("Valor da Gratificação: " + valorGratificacao.ToString("N"));
+            Centralizar("Valor Auxílio Alimentação: " + valorAuxilioAlimentacao.ToString("N"));
+            Centralizar("Salário Líquido: " + valorSalarioLiquido.ToString("N"));
+        }
+
+        private string GetSituacaoEstagiario(double valorSalarioLiquido)
+        {
+            if (valorSalarioLiquido < 350)
+            {
+                return "Mal remunerado";
+            }
+            else if (valorSalarioLiquido < 600)
+            {
+                return "Normal";
+            }
+            else
+            {
+                return "Bem remunerado";
+            }
         }
 
         private double GetValorAuxilioAlimentacao(string categorias, double valorSalarioBruto, double valorSalarioMinimo)
         {
-            throw new NotImplementedException();
+            double valorAuxilioAlimentacao = (valorSalarioBruto / 3) / 2;
+            if (categorias.Equals("Calouro") && (valorSalarioBruto < (valorSalarioMinimo / 2)))
+            {
+                valorAuxilioAlimentacao = valorSalarioBruto / 3;
+            }
+            return valorAuxilioAlimentacao;
         }
 
-        private  double GetValorImposto(string categorias, double valorSalarioBruto)
+        private double GetValorImposto(string categorias, double valorSalarioBruto)
         {
-            throw new NotImplementedException();
+            double valorImposto = 0;
+            switch (categorias)
+            {
+                case "Calouro":
+                    valorImposto = valorSalarioBruto < 300 ? valorSalarioBruto * 0.01 : valorSalarioBruto * 0.02;
+                    break;
+
+                case "Veterano":
+                    valorImposto = valorSalarioBruto < 400 ? valorSalarioBruto * 0.03 : valorSalarioBruto * 0.04;
+                    break;
+            }
+            return valorImposto;
         }
 
-        private  double GetGratificacao(string turno, double horasTrabalhadas)
+        private double GetGratificacao(string turno, double horasTrabalhadas)
         {
             double valorGratificacao = 30;
-            if (turno.Equals("Manhã") && horasTrabalhadas>80)
+            if (turno.Equals("Noite") && horasTrabalhadas > 80)
             {
                 valorGratificacao = 50;
             }
             return valorGratificacao;
         }
 
-        private  double GetCoeficiente(string turno, double salarioMinimo)
+        private double GetCoeficiente(string turno, double salarioMinimo)
         {
 
             double valorCoefiente = 0;
@@ -175,29 +224,20 @@ namespace Treinojunior.ProjetosMedios
             int tr = int.Parse(Console.ReadLine());
             if (tr == 1)
             {
-                string turno;
-                string turnoManha = "Manhã";
-                return turno = turnoManha;
+                return "Manhã";
             }
             else if (tr == 2)
             {
-                string turno;
-                string turnoTarde = "Tarde";
-                return turno = turnoTarde;
+                return "Tarde";
             }
             else if (tr == 3)
             {
-                string turno;
-                string turnoNoite = "Noite";
-                return turno = turnoNoite;
+                return "Noite";
             }
             else
             {
-                string turno = "Error. Nenhuma das opções selecionadas.";
-                Centralizar(turno);
-                return turno;
+                return "Error. Nenhuma das opções selecionadas";
             }
-
         }
 
         private static string Categorias()
@@ -206,16 +246,11 @@ namespace Treinojunior.ProjetosMedios
             int categ = int.Parse(Console.ReadLine());
             if (categ == 1)
             {
-                string categoria;
-                string ct = "Calouro";
-                return categoria = ct;
+                return "Calouro";
             }
             else
             {
-                string categoria;
-                string ct = "Veterano";
-                return categoria = ct;
-
+                return "Veterano";
             }
         }
     }

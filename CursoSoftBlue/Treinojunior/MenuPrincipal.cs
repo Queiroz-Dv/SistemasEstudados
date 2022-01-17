@@ -34,6 +34,7 @@ namespace Treinojunior
             Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Fechar diário            ||"));
             Console.WriteLine("|{0}|", AlinhaTexto(35, "  ============================== "));
             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+            Linha();
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Write("\n{0}", AlinhaTexto(36, "Escolha uma das opções de estudos realizados : ", "L"));
             try

@@ -106,3 +106,4 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojun
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csproj.CopyComplete
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.exe
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\SistemasEstudados.csprojAssemblyReference.cache

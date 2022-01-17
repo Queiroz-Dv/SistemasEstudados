@@ -1,6 +1,7 @@
 ﻿using System;
 using Treinojunior.AbaPaginaDois;
 using Treinojunior.POO;
+using Treinojunior.ProjetosMedios;
 using Treinojunior.TestesBásicos;
 using Treinojunior.TestesMatematicos.ModelosMedia;
 
@@ -13,7 +14,7 @@ namespace Treinojunior
             //Tamanho da tela
             Console.SetWindowSize(100, 20);
             //Nome de cima da tela
-            Console.Title = "Queiroz Sistemas[v1.0]";
+            Console.Title = "Menu ALternativo";
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -27,20 +28,20 @@ namespace Treinojunior
                 Console.BackgroundColor = ConsoleColor.DarkGray;
                 Linha();
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "  =============================="));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar Página <<          ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste de Media            ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Banco Matemático          ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Matricula de aluno        ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Calcular Peso             ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Próxima página >>        ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "  ============================== "));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "  ======================================="));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar Página <<                   ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste de Media                     ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Banco Matemático                   ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Matricula de aluno                 ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Calcular Peso                      ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Projetos de médio porte >>         ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "  ======================================="));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+                Linha();
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.Write("\n{0}", AlinhaTexto(36, "Escolha uma das opções de estudos realizados: ", "L"));
                 try
                 {
-
                     int valor = int.Parse(Console.ReadLine());
                     switch (valor)
                     {
@@ -59,6 +60,9 @@ namespace Treinojunior
                         case 4:
                             CalculoPesoIdeal.Menu();
                             continue;
+                        case 5:
+                            MenuProjetosMedios.Menu();
+                            continue;
                         case 10:
                             break;
                         default:
@@ -67,8 +71,6 @@ namespace Treinojunior
                             continue;
                     }
                     return valor;
-
-
                 }
                 catch (FormatException)
                 {

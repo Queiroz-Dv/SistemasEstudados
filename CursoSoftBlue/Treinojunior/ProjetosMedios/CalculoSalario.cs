@@ -141,7 +141,12 @@ namespace Treinojunior.ProjetosMedios
 
         private  double GetGratificacao(string turno, double horasTrabalhadas)
         {
-            throw new NotImplementedException();
+            double valorGratificacao = 30;
+            if (turno.Equals("Manhã") && horasTrabalhadas>80)
+            {
+                valorGratificacao = 50;
+            }
+            return valorGratificacao;
         }
 
         private  double GetCoeficiente(string turno, double salarioMinimo)

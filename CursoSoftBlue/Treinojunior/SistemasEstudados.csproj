@@ -74,8 +74,8 @@
     <Compile Include="BancoMatematico\EntradaBanco.cs" />
     <Compile Include="Menus\PaginaDois.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjetosGrandes\BaseLeitura.cs" />
-    <Compile Include="ProjetosGrandes\ConsumoEnergia.cs" />
+    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\BaseLeitura.cs" />
+    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\ConsumoEnergia.cs" />
     <Compile Include="Menus\MenuProjetosGrandes.cs" />
     <Compile Include="ProjetosMedios\CalculoSalario.cs" />
     <Compile Include="Menus\MenuProjetosMedios.cs" />

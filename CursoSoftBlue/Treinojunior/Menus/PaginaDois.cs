@@ -28,14 +28,14 @@ namespace Treinojunior
                 Console.BackgroundColor = ConsoleColor.DarkGray;
                 Linha();
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "  ======================================="));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar Página <<                   ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste de Media                     ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Banco Matemático                   ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Matricula de aluno                 ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Calcular Peso                      ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Projetos de médio porte >>         ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "  ======================================="));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "  =================================================="));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar Página <<                              ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste de Media                                ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Matricula de Aluno                            ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Calcular Peso                                 ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Projetos de Médio Porte >>                    ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Projetos de Grande Porte >>                   ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "  =================================================="));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Linha();
                 Console.BackgroundColor = ConsoleColor.Black;
@@ -52,19 +52,16 @@ namespace Treinojunior
                             MediaComum.Menu();
                             continue;
                         case 2:
-                            EntradaBanco.Menu();
-                            continue;
-                        case 3:
                             MatriculaAluno.Menu();
                             continue;
-                        case 4:
+                        case 3:
                             CalculoPesoIdeal.Menu();
                             continue;
-                        case 5:
+                        case 4:
                             MenuProjetosMedios.Menu();
                             continue;
-                        case 10:
-                            break;
+                        case 5:
+                            continue;
                         default:
                             Centralizar("Opção inválida.");
                             Console.ReadKey();

@@ -4,6 +4,14 @@ namespace Treinojunior.TestesMatematicos.ModelosMedia
 {
     class MediaComum
     {
+        public MediaComum()
+        {
+            //Tamanho da tela
+            Console.SetWindowSize(100, 20);
+            //Nome de cima da tela
+            Console.Title = "Media Comum";
+            Console.ForegroundColor = ConsoleColor.White;
+        }
         public static void Menu()
         {
             while (true)

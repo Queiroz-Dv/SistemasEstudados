@@ -49,7 +49,7 @@ namespace Treinojunior.ProjetosMedios
                             Console.BackgroundColor = ConsoleColor.DarkGray;
                             Linha();
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| Digite o salário mínimno:                     || "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, "Digite o salário mínimno:   "));
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                             Linha();
                             Console.BackgroundColor = ConsoleColor.Black;
@@ -59,8 +59,8 @@ namespace Treinojunior.ProjetosMedios
                             Console.BackgroundColor = ConsoleColor.DarkGray;
                             Linha();
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"|| Digite o salário mínimno: {getSalarioMinimo}    || "));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| Digite as horas trabalhadas:     || "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"Salário Mínimo: {getSalarioMinimo} "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, "Digite as horas trabalhadas:        "));
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                             Linha();
                             Console.BackgroundColor = ConsoleColor.Black;
@@ -71,8 +71,8 @@ namespace Treinojunior.ProjetosMedios
                             Console.BackgroundColor = ConsoleColor.DarkGray;
                             Linha();
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"|| Digite o salário mínimno: {getSalarioMinimo}           || "));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"|| Digite as horas trabalhadas: {getHorasTrabalhadas}        || "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"Salário Mínimo: {getSalarioMinimo}        "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"Horas Trabalhadas: {getHorasTrabalhadas}  "));
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                             Linha();
                             Console.BackgroundColor = ConsoleColor.Black;
@@ -83,9 +83,9 @@ namespace Treinojunior.ProjetosMedios
                             Console.BackgroundColor = ConsoleColor.DarkGray;
                             Linha();
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"|| Digite o salário mínimno: {getSalarioMinimo}         || "));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"|| Digite as horas trabalhadas: {getHorasTrabalhadas}      || "));
-                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"|| Digite o salário mínimno: {getCategorias}           || "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"Salário Mínimo: {getSalarioMinimo}          "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"Horas Trabalhadas: {getHorasTrabalhadas}    "));
+                            Console.WriteLine("|{0}|", AlinhaTexto(35, $"Categoria: {getCategorias}                  "));
                             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                             Linha();
                             Console.BackgroundColor = ConsoleColor.Black;
@@ -93,6 +93,7 @@ namespace Treinojunior.ProjetosMedios
                             if (getTurnos == "Manhã" || getTurnos == "Tarde" || getTurnos == "Noite")
                             {
                                 CalculoSalario calcular = new CalculoSalario();
+                                Console.Clear();
                                 calcular.Processamento(getCategorias, getTurnos, getHorasTrabalhadas, getSalarioMinimo);
                                 Console.ReadKey();
                                 Centralizar("Pressione qualquer tecla para voltar ao menu");
@@ -137,13 +138,18 @@ namespace Treinojunior.ProjetosMedios
                                           double valorAuxilioAlimentacao, double valorSalarioLiquido)
         {
             string situacaoEstagiario = GetSituacaoEstagiario(valorSalarioLiquido);
-            Console.Clear();
-            Centralizar("Valor do Coeficiente: " + valorCoeficiente.ToString("N"));
-            Centralizar("Salário Bruto: " + valorSalarioBruto.ToString("N"));
-            Centralizar("Valor do Imposto: " + valorImposto.ToString("N"));
-            Centralizar("Valor da Gratificação: " + valorGratificacao.ToString("N"));
-            Centralizar("Valor Auxílio Alimentação: " + valorAuxilioAlimentacao.ToString("N"));
-            Centralizar("Salário Líquido: " + valorSalarioLiquido.ToString("N"));
+            Console.BackgroundColor = ConsoleColor.DarkGray;
+            Linha();
+            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "Valor do Coeficiente: " + valorCoeficiente.ToString("N")));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "Salário Bruto: " + valorSalarioBruto.ToString("N")));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "Valor do Imposto: " + valorImposto.ToString("N")));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "Valor da Gratificação: " + valorGratificacao.ToString("N")));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "Valor Auxílio Alimentação: " + valorAuxilioAlimentacao.ToString("N")));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "Salário Líquido: " + valorSalarioLiquido.ToString("N")));
+            Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
+            Linha();
+            Console.BackgroundColor = ConsoleColor.Black;
         }
 
         private string GetSituacaoEstagiario(double valorSalarioLiquido)

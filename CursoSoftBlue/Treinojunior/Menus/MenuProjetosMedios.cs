@@ -24,7 +24,6 @@ namespace Treinojunior.ProjetosMedios
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar para projetos de pequeno porte <<        ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Calcular Salário                                ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Projetos de grande porte >>                     ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Linha();
                 Console.BackgroundColor = ConsoleColor.Black;

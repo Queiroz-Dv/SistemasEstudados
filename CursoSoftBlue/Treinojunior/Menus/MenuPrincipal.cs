@@ -9,7 +9,7 @@ namespace Treinojunior
             //Tamanho da tela
             Console.SetWindowSize(100, 20);
             //Nome de cima da tela
-            Console.Title = "Queiroz Sistemas[v1.0]";
+            Console.Title = "Menu Principal";
             Console.ForegroundColor = ConsoleColor.White;
         }
         public int Criar()
@@ -20,19 +20,20 @@ namespace Treinojunior
             Console.BackgroundColor = ConsoleColor.DarkGray;
             Linha();
             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "  =============================="));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Próxima página >>         ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste Contador Sequencial ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Teste Pular Números       ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Teste Contínuo            ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Teste Tabuada             ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Teste Fatorial            ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 6. Teste Fibonacci           ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 7. Teste If Complexo         ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 8. Teste Switch Complexo     ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 9. Teste Validade            ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Fechar diário            ||"));
-            Console.WriteLine("|{0}|", AlinhaTexto(35, "  ============================== "));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "  =================================================="));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| Projetos e Testes de Pequena Complexidade         ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Próxima página >>                              ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Teste Contador Sequencial                      ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Teste Pular Números                            ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Teste Contínuo                                 ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Teste Tabuada                                  ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Teste Fatorial                                 ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 6. Teste Fibonacci                                ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 7. Teste If Complexo                              ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 8. Teste Switch Complexo                          ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 9. Teste Validade                                 ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 10. Fechar diário                                 ||"));
+            Console.WriteLine("|{0}|", AlinhaTexto(35, "  =================================================="));
             Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
             Linha();
             Console.BackgroundColor = ConsoleColor.Black;

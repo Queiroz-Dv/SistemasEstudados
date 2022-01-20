@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Reflection.TypeExtensions, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reflection.TypeExtensions.4.4.0\lib\net461\System.Reflection.TypeExtensions.dll</HintPath>
     </Reference>
@@ -49,6 +50,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -75,8 +77,13 @@
     <Compile Include="Menus\PaginaDois.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\BaseLeitura.cs" />
-    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\ConsumoEnergia.cs" />
     <Compile Include="Menus\MenuProjetosGrandes.cs" />
+    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\ConsumoEnergia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\ConsumoEnergia.Designer.cs">
+      <DependentUpon>ConsumoEnergia.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProjetosMedios\CalculoSalario.cs" />
     <Compile Include="Menus\MenuProjetosMedios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

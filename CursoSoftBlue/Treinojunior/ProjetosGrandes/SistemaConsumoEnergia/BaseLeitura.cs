@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsumoEnergiaCondominio
 {
-    class BaseLeitura
+     public class  BaseLeitura
     {
         public string Casa { get; set; }
         public double Consumo { get; set; }

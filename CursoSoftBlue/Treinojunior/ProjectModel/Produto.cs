@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Treinojunior.ProjectModel
 {
-    class Produto
+    public class Produto
     {
         public Guid ID { get; set; }
         public string Descricao { get; set; }

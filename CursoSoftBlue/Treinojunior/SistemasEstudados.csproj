@@ -76,6 +76,13 @@
     <Compile Include="BancoMatematico\EntradaBanco.cs" />
     <Compile Include="Menus\PaginaDois.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="WindowsFormsSistemas\SistemaReajuste\Funcionario.cs" />
+    <Compile Include="WindowsFormsSistemas\SistemaReajuste\ReajusteSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsSistemas\SistemaReajuste\ReajusteSalario.Designer.cs">
+      <DependentUpon>ReajusteSalario.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowsFormsSistemas\SistemaConsumoEnergia\BaseLeitura.cs" />
     <Compile Include="Menus\WFProjetos.cs" />
     <Compile Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.cs">
@@ -98,6 +105,7 @@
     <Compile Include="AbaMenuPrincipal\TesteFibo.cs" />
     <Compile Include="AbaMenuPrincipal\Tabuada.cs" />
     <Compile Include="AbaMenuPrincipal\TesteValidacao.cs" />
+    <Compile Include="WindowsFormsSistemas\SistemaReajuste\ReposFuncionario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -108,6 +116,9 @@
     <Folder Include="ProjetosGrandes\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="WindowsFormsSistemas\SistemaReajuste\ReajusteSalario.resx">
+      <DependentUpon>ReajusteSalario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.resx">
       <DependentUpon>ConsumoEnergia.cs</DependentUpon>
     </EmbeddedResource>

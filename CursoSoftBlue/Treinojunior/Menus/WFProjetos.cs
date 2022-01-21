@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FolhadePagamento;
+using System;
 using Treinojunior.ProjetosGrandes.SistemaConsumoEnergia;
 
 namespace Treinojunior.ProjetosGrandes
@@ -10,7 +11,7 @@ namespace Treinojunior.ProjetosGrandes
             //Tamanho da tela
             Console.SetWindowSize(100, 20);
             //Nome de cima da tela
-            Console.Title = "Menu Projetos de Grande Porte";
+            Console.Title = "Projetos Windows Form";
             Console.ForegroundColor = ConsoleColor.White;
         }
         public static int Menu()
@@ -25,6 +26,7 @@ namespace Treinojunior.ProjetosGrandes
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar para projetos de pequeno porte <<        ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Sistema de Consumo de Energia                   ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Sistema de Reajuste Salarial                    ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Linha();
                 Console.BackgroundColor = ConsoleColor.Black;
@@ -40,6 +42,10 @@ namespace Treinojunior.ProjetosGrandes
                         case 1:
                             ConsumoEnergia consumoEnergia = new ConsumoEnergia();
                             consumoEnergia.ShowDialog();
+                            continue;
+                        case 2:
+                            FormLeituraArquivo form = new FormLeituraArquivo();
+                            form.ShowDialog();
                             continue;
                         default:
                             Centralizar("Opção inválida.");

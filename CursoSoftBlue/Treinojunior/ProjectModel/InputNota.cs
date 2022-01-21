@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Treinojunior.ProjectModel
 {
-    class InputNota
+    public class InputNota
     {
         public Guid ID { get; set; }
         public string Numero { get; set; }

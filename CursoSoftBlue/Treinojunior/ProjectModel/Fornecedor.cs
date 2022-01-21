@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Treinojunior.ProjectModel
 {
-    class Fornecedor
+    public class Fornecedor
     {
         //Guid representa um número interior de 16 bytes que pode ser usado
         //como indentificador 

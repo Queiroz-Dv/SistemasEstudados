@@ -76,6 +76,12 @@
     <Compile Include="BancoMatematico\EntradaBanco.cs" />
     <Compile Include="Menus\PaginaDois.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.Designer.cs">
+      <DependentUpon>GeradorArquivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowsFormsSistemas\SistemaReajuste\Funcionario.cs" />
     <Compile Include="WindowsFormsSistemas\SistemaReajuste\ReajusteSalario.cs">
       <SubType>Form</SubType>
@@ -116,6 +122,9 @@
     <Folder Include="ProjetosGrandes\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.resx">
+      <DependentUpon>GeradorArquivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaReajuste\ReajusteSalario.resx">
       <DependentUpon>ReajusteSalario.cs</DependentUpon>
     </EmbeddedResource>

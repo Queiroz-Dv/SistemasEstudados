@@ -62,18 +62,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstudoPOO\InputNota.cs" />
     <Compile Include="ProjetosMedios\CalculoPesoIdeal.cs" />
-    <Compile Include="BancoMatematico\BaseOperacional\BaseDiretorio.cs" />
-    <Compile Include="BancoMatematico\BaseOperacional\Cliente.cs" />
-    <Compile Include="BancoMatematico\BaseOperacional\IPessoa.cs" />
-    <Compile Include="BancoMatematico\OperacoesBancarias\CadastreMatematico.cs" />
-    <Compile Include="BancoMatematico\OperacoesBancarias\Deposite.cs" />
-    <Compile Include="BancoMatematico\OperacoesBancarias\Saque.cs" />
-    <Compile Include="BancoMatematico\OperacoesBancarias\Transfere.cs" />
-    <Compile Include="BancoMatematico\BaseOperacional\BaseOp.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\BaseDiretorio.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\Cliente.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\IPessoa.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\OperacoesBancarias\CadastreMatematico.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\OperacoesBancarias\Deposite.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\OperacoesBancarias\Saque.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\OperacoesBancarias\Transfere.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\BaseOp.cs" />
     <Compile Include="Base\BasePessoa.cs" />
     <Compile Include="Menus\MenuPrincipal.cs" />
-    <Compile Include="BancoMatematico\EntradaBanco.cs" />
+    <Compile Include="ProjetosGrandes\BancoMatematico\EntradaBanco.cs" />
     <Compile Include="Menus\PaginaDois.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.cs">
@@ -117,10 +118,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ConfigGrafico\" />
-    <Folder Include="ProjetosGrandes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.resx">
       <DependentUpon>GeradorArquivo.cs</DependentUpon>

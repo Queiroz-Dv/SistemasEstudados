@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbaPaginaDois\CalculoPesoIdeal.cs" />
+    <Compile Include="ProjetosMedios\CalculoPesoIdeal.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\BaseDiretorio.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\Cliente.cs" />
     <Compile Include="BancoMatematico\BaseOperacional\IPessoa.cs" />
@@ -87,7 +87,7 @@
     <Compile Include="ProjetosMedios\CalculoSalario.cs" />
     <Compile Include="Menus\MenuProjetosMedios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AbaPaginaDois\MatriculaAluno.cs" />
+    <Compile Include="ProjetosMedios\MatriculaAluno.cs" />
     <Compile Include="AbaMenuPrincipal\MediaComum.cs" />
     <Compile Include="AbaMenuPrincipal\TesteContinuo.cs" />
     <Compile Include="AbaMenuPrincipal\TesteComplexo.cs" />
@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ConfigGrafico\" />
+    <Folder Include="ProjetosGrandes\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.resx">

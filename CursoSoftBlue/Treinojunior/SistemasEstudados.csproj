@@ -62,7 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstudoPOO\Fornecedor.cs" />
     <Compile Include="EstudoPOO\InputNota.cs" />
+    <Compile Include="EstudoPOO\InputProdutoNota.cs" />
+    <Compile Include="EstudoPOO\Produto.cs" />
     <Compile Include="ProjetosMedios\CalculoPesoIdeal.cs" />
     <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\BaseDiretorio.cs" />
     <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\Cliente.cs" />

@@ -1,6 +1,7 @@
 ﻿using System;
 using Treinojunior.AbaPaginaDois;
 using Treinojunior.POO;
+using Treinojunior.ProjetosGrandes;
 using Treinojunior.ProjetosMedios;
 using Treinojunior.TestesBásicos;
 using Treinojunior.TestesMatematicos.ModelosMedia;
@@ -14,7 +15,7 @@ namespace Treinojunior
             //Tamanho da tela
             Console.SetWindowSize(100, 20);
             //Nome de cima da tela
-            Console.Title = "Menu ALternativo";
+            Console.Title = "Menu";
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -34,7 +35,7 @@ namespace Treinojunior
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Matricula de Aluno                            ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Calcular Peso                                 ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Projetos de Médio Porte >>                    ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Projetos de Grande Porte >>                   ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Projetos Windows Form    >>                   ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "  =================================================="));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Linha();
@@ -61,6 +62,7 @@ namespace Treinojunior
                             MenuProjetosMedios.Menu();
                             continue;
                         case 5:
+                            ProjetosWindowsForms.Menu();
                             continue;
                         default:
                             Centralizar("Opção inválida.");

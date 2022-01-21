@@ -76,12 +76,12 @@
     <Compile Include="BancoMatematico\EntradaBanco.cs" />
     <Compile Include="Menus\PaginaDois.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\BaseLeitura.cs" />
-    <Compile Include="Menus\MenuProjetosGrandes.cs" />
-    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\ConsumoEnergia.cs">
+    <Compile Include="WindowsFormsSistemas\SistemaConsumoEnergia\BaseLeitura.cs" />
+    <Compile Include="Menus\WFProjetos.cs" />
+    <Compile Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProjetosGrandes\SistemaConsumoEnergia\ConsumoEnergia.Designer.cs">
+    <Compile Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.Designer.cs">
       <DependentUpon>ConsumoEnergia.cs</DependentUpon>
     </Compile>
     <Compile Include="ProjetosMedios\CalculoSalario.cs" />
@@ -105,6 +105,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ConfigGrafico\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.resx">
+      <DependentUpon>ConsumoEnergia.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

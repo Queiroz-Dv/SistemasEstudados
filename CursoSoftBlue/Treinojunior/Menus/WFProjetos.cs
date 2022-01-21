@@ -1,10 +1,11 @@
 ﻿using System;
+using Treinojunior.ProjetosGrandes.SistemaConsumoEnergia;
 
 namespace Treinojunior.ProjetosGrandes
 {
-    class MenuProjetosGrandes : MenuPrincipal
+    class ProjetosWindowsForms : MenuPrincipal
     {
-        public MenuProjetosGrandes()
+        public ProjetosWindowsForms()
         {
             //Tamanho da tela
             Console.SetWindowSize(100, 20);
@@ -37,7 +38,8 @@ namespace Treinojunior.ProjetosGrandes
                             Console.Clear();
                             break;
                         case 1:
-                            ConsumoEnergia.Menu();
+                            ConsumoEnergia consumoEnergia = new ConsumoEnergia();
+                            consumoEnergia.ShowDialog();
                             continue;
                         default:
                             Centralizar("Opção inválida.");

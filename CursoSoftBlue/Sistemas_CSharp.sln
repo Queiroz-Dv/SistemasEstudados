@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemasEstudados", "Treino
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewProject", "ViewProject\ViewProject.csproj", "{4E30059D-B4E5-4473-BDF5-DBA1BEB3E81A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPersistence", "ProjectPersistence\ProjectPersistence.csproj", "{88373E22-FBDE-48B1-8A90-D4B8F9A803D6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{4E30059D-B4E5-4473-BDF5-DBA1BEB3E81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E30059D-B4E5-4473-BDF5-DBA1BEB3E81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E30059D-B4E5-4473-BDF5-DBA1BEB3E81A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{88373E22-FBDE-48B1-8A90-D4B8F9A803D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88373E22-FBDE-48B1-8A90-D4B8F9A803D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88373E22-FBDE-48B1-8A90-D4B8F9A803D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88373E22-FBDE-48B1-8A90-D4B8F9A803D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

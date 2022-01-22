@@ -2,6 +2,7 @@
 using System;
 using Treinojunior.ProjetosGrandes.SistemaConsumoEnergia;
 using Treinojunior.WindowsFormsSistemas.SistemaArquivamento;
+using ViewProject;
 
 namespace Treinojunior.ProjetosGrandes
 {
@@ -55,7 +56,9 @@ namespace Treinojunior.ProjetosGrandes
                             geradorArquivo.ShowDialog();
                             continue;
                         case 4:
-                            
+                            ViewFornecedor view = new ViewFornecedor();
+                            view.ShowDialog();
+                            continue;
                         default:
                             Centralizar("Opção inválida.");
                             Console.ReadKey();

@@ -22,7 +22,7 @@ namespace ViewProject
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            this.controller.Insert(
+           var fornecedor = this.controller.Insert(
                 new Fornecedor()
                 {
                     ID = Guid.NewGuid(),
@@ -30,6 +30,15 @@ namespace ViewProject
                     CNPJ = txtCNPJ.Text
                 }
                 );
+
+            txtID.Text = fornecedor.ID.ToString();
+            dgvFornecedores.DataSource = null;
+            dgvFornecedores.DataSource = this.controller.GetAll();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

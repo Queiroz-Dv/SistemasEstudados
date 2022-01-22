@@ -49,10 +49,6 @@
       <Project>{e520cf48-4ae8-4775-b52b-569287ed9619}</Project>
       <Name>SistemasEstudados</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ViewProject\ViewProject.csproj">
-      <Project>{4e30059d-b4e5-4473-bdf5-dba1beb3e81a}</Project>
-      <Name>ViewProject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

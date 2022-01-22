@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectController;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace ViewProject
 {
     public partial class ViewFornecedor : Form
     {
+        private FornecedorController controller = new FornecedorController();
         public ViewFornecedor()
         {
             InitializeComponent();

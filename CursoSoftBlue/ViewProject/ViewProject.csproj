@@ -92,9 +92,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Treinojunior\SistemasEstudados.csproj">
-      <Project>{e520cf48-4ae8-4775-b52b-569287ed9619}</Project>
-      <Name>SistemasEstudados</Name>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectController\ProjectController.csproj">
+      <Project>{1992094b-c04b-44f3-aade-0ff431625bc3}</Project>
+      <Name>ProjectController</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

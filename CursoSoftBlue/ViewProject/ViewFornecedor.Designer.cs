@@ -30,12 +30,12 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlSuperior = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCNPJ = new System.Windows.Forms.TextBox();
+            this.pnlSuperior = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -79,16 +79,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
-            // pnlSuperior
-            // 
-            this.pnlSuperior.Controls.Add(this.tableLayoutPanel2);
-            this.pnlSuperior.Controls.Add(this.tableLayoutPanel1);
-            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
-            this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(405, 182);
-            this.pnlSuperior.TabIndex = 1;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -131,6 +121,16 @@
             this.txtCNPJ.Size = new System.Drawing.Size(122, 20);
             this.txtCNPJ.TabIndex = 1;
             // 
+            // pnlSuperior
+            // 
+            this.pnlSuperior.Controls.Add(this.tableLayoutPanel2);
+            this.pnlSuperior.Controls.Add(this.tableLayoutPanel1);
+            this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
+            this.pnlSuperior.Name = "pnlSuperior";
+            this.pnlSuperior.Size = new System.Drawing.Size(405, 182);
+            this.pnlSuperior.TabIndex = 1;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 5;
@@ -138,7 +138,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 81F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel2.Controls.Add(this.btnNovo, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnSalvar, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnCancelar, 2, 0);
@@ -170,6 +170,7 @@
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCancelar
             // 

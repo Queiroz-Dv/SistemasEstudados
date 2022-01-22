@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Treinojunior.ProjectModel;
 
 namespace ViewProject
 {
@@ -17,6 +18,18 @@ namespace ViewProject
         public ViewFornecedor()
         {
             InitializeComponent();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            this.controller.Insert(
+                new Fornecedor()
+                {
+                    ID = Guid.NewGuid(),
+                    Nome = txtNome.Text,
+                    CNPJ = txtCNPJ.Text
+                }
+                );
         }
     }
 }

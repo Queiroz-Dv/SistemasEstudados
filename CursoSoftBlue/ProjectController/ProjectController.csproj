@@ -47,13 +47,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ModelProject\ModelProject.csproj">
+      <Project>{36e11af3-d940-4bca-a399-91579257c7eb}</Project>
+      <Name>ModelProject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjectPersistence\ProjectPersistence.csproj">
       <Project>{91532d2d-61d8-4023-9236-25e5923537c8}</Project>
       <Name>ProjectPersistence</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Treinojunior\SistemasEstudados.csproj">
-      <Project>{e520cf48-4ae8-4775-b52b-569287ed9619}</Project>
-      <Name>SistemasEstudados</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

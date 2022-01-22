@@ -28,7 +28,8 @@ namespace Treinojunior.ProjetosGrandes
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 0. Voltar para projetos de pequeno porte <<        ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 1. Sistema de Consumo de Energia                   ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Sistema de Reajuste Salarial                    ||"));
-                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Sistema de Gerador de Arquivo                   ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Sistema Gerador de Arquivo                      ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Sistema de Gestão de Fornecedores(MVC)          ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Linha();
                 Console.BackgroundColor = ConsoleColor.Black;
@@ -53,6 +54,8 @@ namespace Treinojunior.ProjetosGrandes
                             GeradorArquivo geradorArquivo = new GeradorArquivo();
                             geradorArquivo.ShowDialog();
                             continue;
+                        case 4:
+                            
                         default:
                             Centralizar("Opção inválida.");
                             Console.ReadKey();

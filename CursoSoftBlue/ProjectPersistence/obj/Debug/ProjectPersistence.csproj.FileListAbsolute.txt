@@ -1,0 +1,9 @@
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\ProjectPersistence.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\ProjectPersistence.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\obj\Debug\ProjectPersistence.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\obj\Debug\ProjectPersistence.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\obj\Debug\ProjectPersistence.csproj.CopyComplete
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\obj\Debug\ProjectPersistence.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\obj\Debug\ProjectPersistence.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\ModelProject.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\ModelProject.pdb

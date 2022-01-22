@@ -1,0 +1,17 @@
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.Properties.Resources.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.ViewFornecedor.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ViewProject.exe.config
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ViewProject.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ViewProject.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ProjectController.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ProjectPersistence.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ProjectController.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ProjectPersistence.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.csproj.CopyComplete
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ModelProject.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ModelProject.pdb

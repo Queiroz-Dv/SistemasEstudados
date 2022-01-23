@@ -4,6 +4,7 @@ namespace Treinojunior
 {
     class Program: MenuPrincipal
     {
+        [STAThread]
         static void Main(string[] args)
         {
             MenuPrincipal obj = new MenuPrincipal();

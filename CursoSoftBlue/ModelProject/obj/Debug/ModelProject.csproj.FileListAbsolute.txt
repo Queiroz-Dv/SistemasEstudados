@@ -1,0 +1,6 @@
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ModelProject\bin\Debug\ModelProject.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ModelProject\bin\Debug\ModelProject.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ModelProject\obj\Debug\ModelProject.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ModelProject\obj\Debug\ModelProject.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ModelProject\obj\Debug\ModelProject.dll
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ModelProject\obj\Debug\ModelProject.pdb

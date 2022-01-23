@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>Treinojunior</RootNamespace>
     <AssemblyName>Treinojunior</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,10 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProjectModel\Fornecedor.cs" />
-    <Compile Include="ProjectModel\InputNota.cs" />
-    <Compile Include="ProjectModel\InputProdutoNota.cs" />
-    <Compile Include="ProjectModel\Produto.cs" />
     <Compile Include="ProjetosMedios\CalculoPesoIdeal.cs" />
     <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\BaseDiretorio.cs" />
     <Compile Include="ProjetosGrandes\BancoMatematico\BaseOperacional\Cliente.cs" />
@@ -121,7 +118,12 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ViewProject\ViewProject.csproj">
+      <Project>{4e30059d-b4e5-4473-bdf5-dba1beb3e81a}</Project>
+      <Name>ViewProject</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.resx">
       <DependentUpon>GeradorArquivo.cs</DependentUpon>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Treinojunior.ProjectModel;
 
 namespace ViewProject
 {
@@ -17,6 +18,49 @@ namespace ViewProject
         public ViewFornecedor()
         {
             InitializeComponent();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            var fornecedor = new Fornecedor()
+            {
+                ID = (txtID.Text == string.Empty ? Guid.NewGuid() : new Guid(txtID.Text)),
+                Nome = txtNome.Text,
+                CNPJ = txtCNPJ.Text
+            };
+            fornecedor = (txtID.Text == string.Empty ? this.controller.Insert(fornecedor) :
+                          this.controller.Update(fornecedor));
+            dgvFornecedores.DataSource = null;
+            dgvFornecedores.DataSource = this.controller.GetAll();
+            ClearControls();
+        }
+
+        private void ClearControls()
+        {
+            dgvFornecedores.ClearSelection();
+            txtID.Text = string.Empty;
+            txtNome.Text = string.Empty;
+            txtCNPJ.Text = string.Empty;
+            txtNome.Focus();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            ClearControls();
+        }
+
+        private void dgvFornecedores_SelectionChanged(object sender, EventArgs e)
+        {
+            txtID.Text = dgvFornecedores.CurrentRow.Cells[0].Value.ToString();
+
+            txtNome.Text = dgvFornecedores.CurrentRow.Cells[1].Value.ToString();
+
+            txtCNPJ.Text = dgvFornecedores.CurrentRow.Cells[2].Value.ToString();
         }
     }
 }

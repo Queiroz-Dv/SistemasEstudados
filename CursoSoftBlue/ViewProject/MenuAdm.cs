@@ -13,6 +13,7 @@ namespace ViewProject
 {
     public partial class MenuAdm : Form
     {
+        private NotaEntradaController entradaController = new NotaEntradaController();
         private FornecedorController fornecedorController = new FornecedorController();
         private ProdutoController produtoController = new ProdutoController();
         public MenuAdm()
@@ -29,9 +30,24 @@ namespace ViewProject
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void compraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             this.Hide();
-            new ViewProduto(produtoController).ShowDialog();
+            new ViewProduto(entradaController, 
+                            fornecedorController, 
+                            produtoController).ShowDialog();
             this.Visible = true;
+        }
+
+        private void entradaDeNotasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new ViewNotaEntrada(entradaController,
+                                fornecedorController, 
+                                produtoController).ShowDialog();
         }
     }
 }

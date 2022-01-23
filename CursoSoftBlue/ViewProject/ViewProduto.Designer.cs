@@ -30,13 +30,13 @@
         {
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.cmbProduto = new System.Windows.Forms.ComboBox();
+            this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.txtCusto = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.pnlInferior = new System.Windows.Forms.Panel();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
@@ -67,11 +67,19 @@
             // 
             // cmbProduto
             // 
+            this.cmbProduto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProduto.FormattingEnabled = true;
             this.cmbProduto.Location = new System.Drawing.Point(107, 35);
             this.cmbProduto.Name = "cmbProduto";
             this.cmbProduto.Size = new System.Drawing.Size(145, 21);
             this.cmbProduto.TabIndex = 2;
+            // 
+            // txtQuantidade
+            // 
+            this.txtQuantidade.Location = new System.Drawing.Point(107, 94);
+            this.txtQuantidade.Name = "txtQuantidade";
+            this.txtQuantidade.Size = new System.Drawing.Size(145, 20);
+            this.txtQuantidade.TabIndex = 1;
             // 
             // txtCusto
             // 
@@ -128,13 +136,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
-            // txtQuantidade
-            // 
-            this.txtQuantidade.Location = new System.Drawing.Point(107, 94);
-            this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(145, 20);
-            this.txtQuantidade.TabIndex = 1;
-            // 
             // pnlInferior
             // 
             this.pnlInferior.Controls.Add(this.btnVoltar);
@@ -156,6 +157,7 @@
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnRemover
             // 
@@ -211,7 +213,9 @@
             this.Controls.Add(this.pnlInferior);
             this.Controls.Add(this.pnlSuperior);
             this.Name = "ViewProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ViewProduto";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.pnlSuperior.ResumeLayout(false);
             this.pnlSuperior.PerformLayout();
             this.pnlInferior.ResumeLayout(false);

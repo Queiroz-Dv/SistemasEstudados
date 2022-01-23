@@ -1,25 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ProjectController;
+using System;
 using System.Windows.Forms;
+using Treinojunior.ProjectModel;
 
 namespace ViewProject
 {
     public partial class ViewNotaEntrada : Form
     {
-        public ViewNotaEntrada()
+        private NotaEntradaController controller;
+        private FornecedorController fornecedorController;
+        private ProdutoController produtoController;
+
+        private InputNota notaAtual;
+        public ViewNotaEntrada(
+            NotaEntradaController controller,
+            FornecedorController fornecedorController,
+            ProdutoController produtoController)
         {
             InitializeComponent();
+            this.controller = controller;
+            this.fornecedorController = fornecedorController;
+            this.produtoController = produtoController;
+            InicilizarComboBoxs();
         }
 
-        private void ViewNotaEntrada_Load(object sender, EventArgs e)
+        private void InicilizarComboBoxs()
         {
-
+            cmbFornecedor.Items.Clear();
+            foreach (Fornecedor fornecedor in this.fornecedorController.GetAll())
+            {
+                cmbFornecedor.Items.Add(fornecedor);
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

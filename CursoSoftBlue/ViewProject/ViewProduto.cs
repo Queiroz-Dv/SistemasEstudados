@@ -1,23 +1,42 @@
 ﻿using ProjectController;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Treinojunior.ProjectModel;
 
 namespace ViewProject
 {
     public partial class ViewProduto : Form
     {
-        private ProdutoController controller;
-        public ViewProduto(ProdutoController controller)
+        private NotaEntradaController controller;
+        private FornecedorController fornecedorController;
+        private ProdutoController produtoController;
+
+        public ViewProduto(NotaEntradaController controller,
+            FornecedorController fornecedorController,
+            ProdutoController produtoController)
         {
             InitializeComponent();
             this.controller = controller;
+            this.fornecedorController = fornecedorController;
+            this.produtoController = produtoController;
+            InicilizarComboBoxs();
+
+        }
+
+        private void InicilizarComboBoxs()
+        {
+            cmbProduto.Items.Clear();
+            foreach (Produto produto in this.produtoController.GetAll())
+            {
+                cmbProduto.Items.Add(produto);
+            }
+        }
+
+        private void btnVoltar_Click(object sender, System.EventArgs e)
+        {
+            MenuAdm menuAdm = new MenuAdm();
+            this.Hide();
+            menuAdm.ShowDialog();
+            this.Visible = true;
         }
     }
 }

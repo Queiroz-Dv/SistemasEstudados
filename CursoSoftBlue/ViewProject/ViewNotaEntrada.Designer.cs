@@ -190,6 +190,7 @@
             this.btnRemover.TabIndex = 0;
             this.btnRemover.Text = "Remover";
             this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnCancelar
             // 
@@ -229,6 +230,7 @@
             this.dgvNota.Name = "dgvNota";
             this.dgvNota.Size = new System.Drawing.Size(485, 252);
             this.dgvNota.TabIndex = 2;
+            this.dgvNota.SelectionChanged += new System.EventHandler(this.dgvNota_SelectionChanged);
             // 
             // ViewNotaEntrada
             // 

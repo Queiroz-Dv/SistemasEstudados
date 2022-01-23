@@ -1,4 +1,5 @@
 ﻿using ProjectPersistence;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Treinojunior.ProjectModel;
@@ -27,6 +28,11 @@ namespace ProjectController
         public InputNota Update(InputNota nota)
         {
             return this.repository.UpdateNota(nota);
+        }
+
+        public InputNota GetNotaByID(Guid ID)
+        {
+            return this.repository.GetNotaByID(ID);
         }
     }
 }

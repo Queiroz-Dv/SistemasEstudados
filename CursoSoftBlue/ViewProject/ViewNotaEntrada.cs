@@ -80,5 +80,51 @@ namespace ViewProject
         {
             ClearControlsNota();
         }
+
+        private void btnRemover_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text == string.Empty)
+            {
+                MessageBox.Show("Selecione a nota a ser removida no grid");
+            }
+            else
+            {
+                this.controller.Remove(new InputNota()
+                {
+                    ID = new Guid(txtID.Text)
+                });
+                dgvNota.DataSource = null;
+                dgvNota.DataSource = this.controller.GetAll();
+                ClearControlsNota();
+            }
+        }
+
+        private void dgvNota_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                this.notaAtual = this.controller.
+                GetNotaByID((Guid)dgvNota.CurrentRow.Cells[0].Value);
+                txtID.Text = notaAtual.ID.ToString();
+                txtNumero.Text = notaAtual.Numero;
+                cmbFornecedor.SelectedItem = notaAtual.FornecedorNota;
+                dtpEmissao.Value = notaAtual.DataEmissao;
+                dtpEntrada.Value = notaAtual.DataEntrada;
+                UpdateGrid();
+            }
+            catch (Exception ex)
+            {
+                this.notaAtual = new InputNota();
+            }
+        }
+
+        private void UpdateGrid()
+        {
+            dgvNota.DataSource = null;
+            if (this.notaAtual.Produtos.Count > 0)
+            {
+                dgvNota.DataSource = this.notaAtual.Produtos;
+            }
+        }
     }
 }

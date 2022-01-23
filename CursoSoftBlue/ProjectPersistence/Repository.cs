@@ -34,6 +34,12 @@ namespace ProjectPersistence
             return fornecedor;
         }
 
+        public InputNota GetNotaByID(Guid iD)
+        {
+            var notaEntrada = this.inputNotas[this.inputNotas.IndexOf(new InputNota() { ID = iD })];
+            return notaEntrada;
+        }
+
         //CRUD Produto
         public Produto InsertProduto(Produto produto)
         {

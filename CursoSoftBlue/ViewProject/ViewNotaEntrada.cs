@@ -40,5 +40,45 @@ namespace ViewProject
             menuAdm.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            ClearControlsNota();
+        }
+
+        private void ClearControlsNota()
+        {
+            dgvNota.ClearSelection();
+            txtID.Text = string.Empty;
+            cmbFornecedor.SelectedIndex = -1;
+            txtNumero.Text = string.Empty;
+            dtpEmissao.Value = DateTime.Now;
+            dtpEntrada.Value = DateTime.Now;
+            cmbFornecedor.Focus();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            var notaEntrada = new InputNota()
+            {
+                ID = (txtID.Text == string.Empty ? Guid.NewGuid() :
+                new Guid(txtID.Text)),
+                DataEmissao = dtpEmissao.Value,
+                DataEntrada = dtpEntrada.Value,
+                FornecedorNota = (Fornecedor)cmbFornecedor.SelectedItem,
+                Numero = txtNumero.Text
+            };
+
+            notaEntrada = (txtID.Text == string.Empty ? this.controller.Insert
+                (notaEntrada) : this.controller.Update(notaEntrada));
+            dgvNota.DataSource = null;
+            dgvNota.DataSource = this.controller.GetAll();
+            ClearControlsNota();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            ClearControlsNota();
+        }
     }
 }

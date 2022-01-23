@@ -38,5 +38,13 @@ namespace ViewProject
             menuAdm.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnNovo_Click(object sender, System.EventArgs e)
+        {
+            dgvProduto.ClearSelection();
+            txtID.Text = string.Empty;
+            cmbProduto.SelectedIndex = -1;
+            cmbProduto.Focus();
+        }
     }
 }

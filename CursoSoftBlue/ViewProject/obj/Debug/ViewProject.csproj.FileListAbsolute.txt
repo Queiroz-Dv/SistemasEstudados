@@ -16,3 +16,5 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProje
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ModelProject.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\bin\Debug\ModelProject.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.MenuAdm.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.ViewNotaEntrada.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ViewProject\obj\Debug\ViewProject.ViewProduto.resources

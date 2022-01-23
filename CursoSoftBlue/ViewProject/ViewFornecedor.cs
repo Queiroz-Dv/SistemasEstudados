@@ -62,5 +62,29 @@ namespace ViewProject
 
             txtCNPJ.Text = dgvFornecedores.CurrentRow.Cells[2].Value.ToString();
         }
+
+        private void btnRemover_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text == string.Empty)
+            {
+                MessageBox.Show("Selecione o Fornecedor a ser removido no grid");
+            }
+            else
+            {
+                this.controller.Remove(
+                    new Fornecedor()
+                    {
+                        ID = new Guid(txtID.Text)
+                    });
+                dgvFornecedores.DataSource = null;
+                dgvFornecedores.DataSource = this.controller.GetAll();
+                ClearControls();
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            ClearControls();
+        }
     }
 }

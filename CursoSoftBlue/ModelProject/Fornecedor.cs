@@ -13,5 +13,32 @@ namespace Treinojunior.ProjectModel
         public Guid ID { get; set; }
         public string Nome { get; set; }
         public string CNPJ { get; set; }
+
+        protected bool Equals(Fornecedor outro)
+        {
+            return ID.Equals(outro.ID);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj))
+            {
+                return false;
+            }
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+            if (obj.GetType() != typeof(Fornecedor))
+            {
+                return false;
+            }
+            return Equals((Fornecedor)obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return GetHashCode();
+        }
     }
 }

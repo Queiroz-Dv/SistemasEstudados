@@ -44,20 +44,16 @@ namespace Treinojunior.ProjetosGrandes
                             Console.Clear();
                             break;
                         case 1:
-                            ConsumoEnergia consumoEnergia = new ConsumoEnergia();
-                            consumoEnergia.ShowDialog();
+                            new ConsumoEnergia().ShowDialog();
                             continue;
                         case 2:
-                            FormLeituraArquivo form = new FormLeituraArquivo();
-                            form.ShowDialog();
+                            new FormLeituraArquivo().ShowDialog();
                             continue;
                         case 3:
-                            GeradorArquivo geradorArquivo = new GeradorArquivo();
-                            geradorArquivo.ShowDialog();
+                            new GeradorArquivo().ShowDialog();
                             continue;
                         case 4:
-                            ViewFornecedor view = new ViewFornecedor();
-                            view.ShowDialog();
+                            new MenuAdm().ShowDialog();
                             continue;
                         default:
                             Centralizar("Opção inválida.");

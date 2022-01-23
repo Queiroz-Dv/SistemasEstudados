@@ -87,6 +87,12 @@
     <EmbeddedResource Include="ViewFornecedor.resx">
       <DependentUpon>ViewFornecedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewNotaEntrada.resx">
+      <DependentUpon>ViewNotaEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProduto.resx">
+      <DependentUpon>ViewProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

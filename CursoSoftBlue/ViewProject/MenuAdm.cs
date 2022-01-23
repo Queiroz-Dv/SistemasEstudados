@@ -22,13 +22,16 @@ namespace ViewProject
 
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ViewFornecedor(fornecedorController).ShowDialog();
             this.Hide();
+            new ViewFornecedor(fornecedorController).ShowDialog();
+            this.Visible = true;
         }
 
         private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new ViewProduto(produtoController).ShowDialog();
+            this.Visible = true;
         }
     }
 }

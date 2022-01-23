@@ -47,7 +47,10 @@ namespace ViewProject
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            Close();
+            MenuAdm menuAdm = new MenuAdm();
+            this.Hide();
+            menuAdm.ShowDialog();
+            this.Visible = true;
         }
 
         private void btnNovo_Click(object sender, EventArgs e)

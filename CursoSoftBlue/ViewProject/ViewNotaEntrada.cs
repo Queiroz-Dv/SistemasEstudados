@@ -16,5 +16,18 @@ namespace ViewProject
         {
             InitializeComponent();
         }
+
+        private void ViewNotaEntrada_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            MenuAdm menuAdm = new MenuAdm();
+            this.Hide();
+            menuAdm.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

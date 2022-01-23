@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectController;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace ViewProject
 {
     public partial class MenuAdm : Form
     {
+        private FornecedorController fornecedorController = new FornecedorController();
+        private ProdutoController produtoController = new ProdutoController();
         public MenuAdm()
         {
             InitializeComponent();
@@ -19,8 +22,13 @@ namespace ViewProject
 
         private void fornecedorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ViewFornecedor().ShowDialog();
+            new ViewFornecedor(fornecedorController).ShowDialog();
             this.Hide();
+        }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new ViewProduto(produtoController).ShowDialog();
         }
     }
 }

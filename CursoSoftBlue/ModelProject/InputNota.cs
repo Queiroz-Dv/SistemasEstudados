@@ -23,10 +23,11 @@ namespace Treinojunior.ProjectModel
 
         public void GravarProduto(InputProdutoNota inputProduto)
         {
-            if (!this.Produtos.Contains(inputProduto))
+            if (this.Produtos.Contains(inputProduto))
             {
-                this.Produtos.Add(inputProduto);
+                this.Produtos.Remove(inputProduto);
             }
+            this.Produtos.Add(inputProduto);
         }
 
         public void RemoverProduto(InputProdutoNota produto)

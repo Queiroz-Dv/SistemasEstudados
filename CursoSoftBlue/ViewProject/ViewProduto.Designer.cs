@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlInferior = new System.Windows.Forms.Panel();
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -76,6 +75,7 @@
             // 
             // txtQuantidade
             // 
+            this.txtQuantidade.Enabled = false;
             this.txtQuantidade.Location = new System.Drawing.Point(107, 94);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(145, 20);
@@ -83,6 +83,7 @@
             // 
             // txtCusto
             // 
+            this.txtCusto.Enabled = false;
             this.txtCusto.Location = new System.Drawing.Point(107, 64);
             this.txtCusto.Name = "txtCusto";
             this.txtCusto.Size = new System.Drawing.Size(145, 20);
@@ -138,57 +139,52 @@
             // 
             // pnlInferior
             // 
-            this.pnlInferior.Controls.Add(this.btnVoltar);
             this.pnlInferior.Controls.Add(this.btnRemover);
             this.pnlInferior.Controls.Add(this.btnCancelar);
             this.pnlInferior.Controls.Add(this.btnSalvar);
             this.pnlInferior.Controls.Add(this.btnNovo);
             this.pnlInferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInferior.Location = new System.Drawing.Point(0, 345);
+            this.pnlInferior.Location = new System.Drawing.Point(0, 344);
             this.pnlInferior.Name = "pnlInferior";
-            this.pnlInferior.Size = new System.Drawing.Size(485, 66);
+            this.pnlInferior.Size = new System.Drawing.Size(485, 67);
             this.pnlInferior.TabIndex = 2;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Location = new System.Drawing.Point(380, 21);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(82, 32);
-            this.btnVoltar.TabIndex = 0;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnRemover
             // 
-            this.btnRemover.Location = new System.Drawing.Point(292, 21);
+            this.btnRemover.Enabled = false;
+            this.btnRemover.Location = new System.Drawing.Point(349, 21);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(82, 32);
             this.btnRemover.TabIndex = 0;
             this.btnRemover.Text = "Remover";
             this.btnRemover.UseVisualStyleBackColor = true;
+            this.btnRemover.Click += new System.EventHandler(this.btnRemover_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(204, 21);
+            this.btnCancelar.Enabled = false;
+            this.btnCancelar.Location = new System.Drawing.Point(249, 21);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(82, 32);
             this.btnCancelar.TabIndex = 0;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(116, 21);
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.Location = new System.Drawing.Point(149, 21);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(82, 32);
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(28, 21);
+            this.btnNovo.Location = new System.Drawing.Point(52, 21);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(82, 32);
             this.btnNovo.TabIndex = 0;
@@ -202,7 +198,7 @@
             this.dgvProduto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProduto.Location = new System.Drawing.Point(0, 120);
             this.dgvProduto.Name = "dgvProduto";
-            this.dgvProduto.Size = new System.Drawing.Size(485, 225);
+            this.dgvProduto.Size = new System.Drawing.Size(485, 224);
             this.dgvProduto.TabIndex = 3;
             // 
             // ViewProduto
@@ -237,7 +233,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlInferior;
-        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;

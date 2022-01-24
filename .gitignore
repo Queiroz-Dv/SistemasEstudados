@@ -3,3 +3,5 @@
 ################################################################################
 
 *.lock
+/CursoSoftBlue/ADO_Base/App_Data/ADO_NETDataBase_log.ldf
+/CursoSoftBlue/ADO_Base/App_Data/ADO_NETDataBase.mdf

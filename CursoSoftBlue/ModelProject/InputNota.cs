@@ -8,7 +8,7 @@ namespace Treinojunior.ProjectModel
 {
     public class InputNota
     {
-        public Guid ID { get; set; }
+        public long? ID { get; set; }
         public string Numero { get; set; }
         public Fornecedor FornecedorNota { get; set; }
         public string CNPJ { get; set; }
@@ -18,6 +18,7 @@ namespace Treinojunior.ProjectModel
 
         public InputNota()
         {
+            this.ID = null;
             this.Produtos = new List<InputProdutoNota>();
         }
 

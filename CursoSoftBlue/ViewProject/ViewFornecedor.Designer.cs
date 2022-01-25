@@ -212,6 +212,7 @@
             this.dgvFornecedores.ReadOnly = true;
             this.dgvFornecedores.Size = new System.Drawing.Size(405, 183);
             this.dgvFornecedores.TabIndex = 2;
+            this.dgvFornecedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFornecedores_CellClick);
             this.dgvFornecedores.SelectionChanged += new System.EventHandler(this.dgvFornecedores_SelectionChanged);
             // 
             // ViewFornecedor

@@ -10,7 +10,7 @@ namespace Treinojunior.ProjectModel
     {
         //Guid representa um número interior de 16 bytes que pode ser usado
         //como indentificador 
-        public Guid ID { get; set; }
+        public long? ID { get; set; }
         public string Nome { get; set; }
         public string CNPJ { get; set; }
 

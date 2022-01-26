@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Treinojunior.ProjectModel;
 
 namespace ProjectPersistence
@@ -34,9 +33,9 @@ namespace ProjectPersistence
             return fornecedor;
         }
 
-        public InputNota GetNotaByID(Guid iD)
+        public InputNota GetNotaByID(long? ID)
         {
-            var notaEntrada = this.inputNotas[this.inputNotas.IndexOf(new InputNota() { ID = iD })];
+            var notaEntrada = this.inputNotas[this.inputNotas.IndexOf(new InputNota() { ID = ID })];
             return notaEntrada;
         }
 

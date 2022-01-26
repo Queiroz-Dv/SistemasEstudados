@@ -1,4 +1,4 @@
-﻿using ProjectController;
+﻿using ADO_Base;
 using System;
 using System.Windows.Forms;
 using Treinojunior.ProjectModel;
@@ -7,19 +7,13 @@ namespace ViewProject
 {
     public partial class ViewProduto : Form
     {
-        private NotaEntradaController controller;
-        private FornecedorController fornecedorController;
-        private ProdutoController produtoController;
+        private DAL_Produto dal = new DAL_Produto();
+        private DAL_Fornecedor DAL_Fornecedor = new DAL_Fornecedor();
+        private Produto produtoAtual;
 
-        private InputNota notaAtual;
-        public ViewProduto(NotaEntradaController controller,
-            FornecedorController fornecedorController,
-            ProdutoController produtoController)
+        public ViewProduto()
         {
             InitializeComponent();
-            this.controller = controller;
-            this.fornecedorController = fornecedorController;
-            this.produtoController = produtoController;
             InicilizarComboBoxs();
 
         }
@@ -27,7 +21,7 @@ namespace ViewProject
         private void InicilizarComboBoxs()
         {
             cmbProduto.Items.Clear();
-            foreach (Produto produto in this.produtoController.GetAll())
+            foreach (Produto produto in this.dal.GetAllProdutos())
             {
                 cmbProduto.Items.Add(produto);
             }
@@ -36,21 +30,13 @@ namespace ViewProject
         private void btnNovo_Click(object sender, System.EventArgs e)
         {
             ClearControlsProduto();
-            if (txtID.Text == string.Empty)
-            {
-                MessageBox.Show("Selecione a nota que terá inserção de produtos no grid")
-            }
-            else
-            {
-                ChangeStatusOfControls(true);
-            }
         }
 
         private void ChangeStatusOfControls(bool newStatus)
         {
             cmbProduto.Enabled = newStatus;
             txtCusto.Enabled = newStatus;
-            txtQuantidade.Enabled = newStatus;
+            txtEstoque.Enabled = newStatus;
             btnNovo.Enabled = !newStatus;
             btnSalvar.Enabled = newStatus;
             btnCancelar.Enabled = newStatus;
@@ -63,33 +49,31 @@ namespace ViewProject
             txtID.Text = string.Empty;
             cmbProduto.SelectedIndex = -1;
             txtCusto.Text = string.Empty;
-            txtQuantidade.Text = string.Empty;
+            txtEstoque.Text = string.Empty;
             cmbProduto.Focus();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            var produtoNota = new InputProdutoNota()
+            dal.Save(new Produto()
             {
-                ID = (txtID.Text == string.Empty ?
-                Guid.NewGuid() : new Guid(txtID.Text)),
-                PrecoCustoCompra = Convert.ToDouble(txtCusto.Text),
-                ProdutoNota = (Produto)cmbProduto.SelectedItem,
-                QuantidadeComprada = Convert.ToDouble(txtQuantidade.Text)
-            };
-            this.notaAtual.GravarProduto(produtoNota);
-            this.notaAtual = this.controller.Update(this.notaAtual);
-            ChangeStatusOfControls(false);
-
+                ID = string.IsNullOrEmpty(txtID.Text)?
+                (long?)null:Convert.ToInt64(txtID.Text),
+                Descricao = txtDescricao.Text,
+                PrecoCusto = Convert.ToDouble(txtCusto.Text),
+                PrecoVenda = Convert.ToDouble(txtPrecoVenda),
+                Estoque = Convert.ToDouble(txtEstoque.Text)
+            });
+            MessageBox.Show("Manutenção realizada com sucesso");
             ClearControlsProduto();
         }
 
         private void UpdateProdutosGrid()
         {
             dgvProduto.DataSource = null;
-            if (this.notaAtual.Produtos.Count > 0)
+            if (this.dal.GetAllProdutos().Count > 0)
             {
-                dgvProduto.DataSource = this.notaAtual.Produtos;
+                dgvProduto.DataSource = this.dal.GetAllProdutos();
             }
         }
 
@@ -101,14 +85,16 @@ namespace ViewProject
 
         private void btnRemover_Click(object sender, EventArgs e)
         {
-            this.notaAtual.RemoverProduto(new InputProdutoNota()
+            if (txtID.Text == string.Empty)
             {
-                ID = new Guid(txtID.Text)
-            });
-            this.controller.Update(this.notaAtual);
-            UpdateProdutosGrid();
-            ClearControlsProduto();
-            ChangeStatusOfControls(false);
+                MessageBox.Show("Selecione o produto a ser removido no grid");
+            }
+            else
+            {
+                this.dal.RemoveById(this.produtoAtual.ID);
+                ClearControlsProduto();
+                MessageBox.Show("Produto removido com sucesso");
+            }
         }
     }
 }

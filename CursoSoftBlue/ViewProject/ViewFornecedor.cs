@@ -1,5 +1,4 @@
 ﻿using ADO_Base;
-using ProjectController;
 using System;
 using System.Configuration;
 using System.Data;
@@ -15,7 +14,7 @@ namespace ViewProject
         private Fornecedor fornecedorAtual;
         private DAL_Fornecedor dal = new DAL_Fornecedor();
 
-        public ViewFornecedor(FornecedorController controller)
+        public ViewFornecedor()
         {
             InitializeComponent();
             GetAllFornecedores();

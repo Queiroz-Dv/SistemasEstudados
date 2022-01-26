@@ -30,7 +30,7 @@ namespace ProjectController
             return this.repository.UpdateNota(nota);
         }
 
-        public InputNota GetNotaByID(Guid ID)
+        public InputNota GetNotaByID(long? ID)
         {
             return this.repository.GetNotaByID(ID);
         }

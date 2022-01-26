@@ -1,4 +1,5 @@
-﻿using ProjectController;
+﻿using ADO_Base;
+using ProjectController;
 using System;
 using System.Windows.Forms;
 using Treinojunior.ProjectModel;
@@ -8,26 +9,26 @@ namespace ViewProject
     public partial class ViewNotaEntrada : Form
     {
         private NotaEntradaController controller;
-        private FornecedorController fornecedorController;
-        private ProdutoController produtoController;
-
+        private DAL_InputNota dal = new DAL_InputNota();
+        private DAL_Fornecedor DAL_Fornecedor = new DAL_Fornecedor();
         private InputNota notaAtual;
-        public ViewNotaEntrada(
-            NotaEntradaController controller,
-            FornecedorController fornecedorController,
-            ProdutoController produtoController)
+
+        public ViewNotaEntrada()
         {
             InitializeComponent();
-            this.controller = controller;
-            this.fornecedorController = fornecedorController;
-            this.produtoController = produtoController;
             InicilizarComboBoxs();
+            GetAllNotas();
+        }
+
+        private void GetAllNotas()
+        {
+            dgvNota.DataSource = dal.GetAllAsDataTable();
         }
 
         private void InicilizarComboBoxs()
         {
             cmbFornecedor.Items.Clear();
-            foreach (Fornecedor fornecedor in this.fornecedorController.GetAll())
+            foreach (Fornecedor fornecedor in this.DAL_Fornecedor.GetAllAsList())
             {
                 cmbFornecedor.Items.Add(fornecedor);
             }
@@ -59,20 +60,15 @@ namespace ViewProject
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            var notaEntrada = new InputNota()
+            dal.Save(new InputNota()
             {
-                ID = (txtID.Text == string.Empty ? Guid.NewGuid() :
-                new Guid(txtID.Text)),
+                ID = string.IsNullOrEmpty(txtID.Text)?(long?)null:Convert.ToInt64(txtID.Text),
+                Numero = txtNumero.Text,
                 DataEmissao = dtpEmissao.Value,
                 DataEntrada = dtpEntrada.Value,
-                FornecedorNota = (Fornecedor)cmbFornecedor.SelectedItem,
-                Numero = txtNumero.Text
-            };
-
-            notaEntrada = (txtID.Text == string.Empty ? this.controller.Insert
-                (notaEntrada) : this.controller.Update(notaEntrada));
-            dgvNota.DataSource = null;
-            dgvNota.DataSource = this.controller.GetAll();
+                FornecedorNota = (Fornecedor)cmbFornecedor.SelectedItem
+            });
+            MessageBox.Show("Manutenção realizada com sucesso");
             ClearControlsNota();
         }
 
@@ -89,13 +85,9 @@ namespace ViewProject
             }
             else
             {
-                this.controller.Remove(new InputNota()
-                {
-                    ID = new Guid(txtID.Text)
-                });
-                dgvNota.DataSource = null;
-                dgvNota.DataSource = this.controller.GetAll();
+                this.dal.RemoveById(this.notaAtual.ID);
                 ClearControlsNota();
+                MessageBox.Show("Nota removida com sucesso");
             }
         }
 
@@ -103,8 +95,8 @@ namespace ViewProject
         {
             try
             {
-                this.notaAtual = this.controller.
-                GetNotaByID((Guid)dgvNota.CurrentRow.Cells[0].Value);
+                this.notaAtual = this.controller.GetNotaByID
+                ((long?)dgvNota.CurrentRow.Cells[0].Value);
                 txtID.Text = notaAtual.ID.ToString();
                 txtNumero.Text = notaAtual.Numero;
                 cmbFornecedor.SelectedItem = notaAtual.FornecedorNota;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Treinojunior.ProjectModel
 {
-    public class InputNota
+    public class NotaEntrada
     {
         public long? ID { get; set; }
         public string Numero { get; set; }
@@ -14,15 +14,15 @@ namespace Treinojunior.ProjectModel
         public string CNPJ { get; set; }
         public DateTime DataEmissao { get; set; }
         public DateTime DataEntrada { get; set; }
-        public IList<InputProdutoNota> Produtos { get; set; }
+        public IList<ProdutoNotaEntrada> Produtos { get; set; }
 
-        public InputNota()
+        public NotaEntrada()
         {
             this.ID = null;
-            this.Produtos = new List<InputProdutoNota>();
+            this.Produtos = new List<ProdutoNotaEntrada>();
         }
 
-        public void GravarProduto(InputProdutoNota inputProduto)
+        public void GravarProduto(ProdutoNotaEntrada inputProduto)
         {
             if (this.Produtos.Contains(inputProduto))
             {
@@ -31,7 +31,7 @@ namespace Treinojunior.ProjectModel
             this.Produtos.Add(inputProduto);
         }
 
-        public void RemoverProduto(InputProdutoNota produto)
+        public void RemoverProduto(ProdutoNotaEntrada produto)
         {
             this.Produtos.Remove(produto);
         }

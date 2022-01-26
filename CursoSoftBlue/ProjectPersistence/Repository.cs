@@ -7,7 +7,7 @@ namespace ProjectPersistence
     {
         private IList<Fornecedor> fornecedores = new List<Fornecedor>();
         private IList<Produto> produtos = new List<Produto>();
-        private IList<InputNota> inputNotas = new List<InputNota>();
+        private IList<NotaEntrada> inputNotas = new List<NotaEntrada>();
 
 
         //CRUD Fornecedor 
@@ -33,9 +33,9 @@ namespace ProjectPersistence
             return fornecedor;
         }
 
-        public InputNota GetNotaByID(long? ID)
+        public NotaEntrada GetNotaByID(long? ID)
         {
-            var notaEntrada = this.inputNotas[this.inputNotas.IndexOf(new InputNota() { ID = ID })];
+            var notaEntrada = this.inputNotas[this.inputNotas.IndexOf(new NotaEntrada() { ID = ID })];
             return notaEntrada;
         }
 
@@ -63,23 +63,23 @@ namespace ProjectPersistence
         }
 
         //CRUD Notas
-        public InputNota InsertNota(InputNota nota)
+        public NotaEntrada InsertNota(NotaEntrada nota)
         {
             this.inputNotas.Add(nota);
             return nota;
         }
 
-        public void RemoverNotas(InputNota nota)
+        public void RemoverNotas(NotaEntrada nota)
         {
             this.inputNotas.Remove(nota);
         }
 
-        public IList<InputNota> GetAllNotas()
+        public IList<NotaEntrada> GetAllNotas()
         {
             return this.inputNotas;
         }
 
-        public InputNota UpdateNota(InputNota nota)
+        public NotaEntrada UpdateNota(NotaEntrada nota)
         {
             this.inputNotas[this.inputNotas.IndexOf(nota)] = nota;
             return nota;

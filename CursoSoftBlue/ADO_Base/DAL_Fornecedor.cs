@@ -81,5 +81,25 @@ namespace ADO_Base
             }
             return fornecedores;
         }
+
+        internal Fornecedor GetById(long ID)
+        {
+            Fornecedor fornecedor = new Fornecedor();
+            var command = new SqlCommand("select id, cnpj, nome, from FORNECEDORES where ID=@ID", connection);
+            command.Parameters.AddWithValue("@ID", ID);
+            connection.Open();
+
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    fornecedor.ID = reader.GetInt32(0);
+                    fornecedor.CNPJ = reader.GetString(1);
+                    fornecedor.Nome = reader.GetString(2);
+                }
+            }
+            connection.Close();
+            return fornecedor;
+        }
     }
 }

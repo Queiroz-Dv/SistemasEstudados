@@ -14,7 +14,7 @@ namespace ViewProject
         private Fornecedor fornecedorAtual;
         private DAL_Fornecedor dal = new DAL_Fornecedor();
 
-        public ViewFornecedor()
+        public ViewFornecedor(DAL_Fornecedor dAL_Fornecedor)
         {
             InitializeComponent();
             GetAllFornecedores();

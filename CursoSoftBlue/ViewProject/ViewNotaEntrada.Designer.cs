@@ -40,7 +40,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlInferior = new System.Windows.Forms.Panel();
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnRemover = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -161,7 +160,6 @@
             // 
             // pnlInferior
             // 
-            this.pnlInferior.Controls.Add(this.btnVoltar);
             this.pnlInferior.Controls.Add(this.btnRemover);
             this.pnlInferior.Controls.Add(this.btnCancelar);
             this.pnlInferior.Controls.Add(this.btnSalvar);
@@ -172,19 +170,9 @@
             this.pnlInferior.Size = new System.Drawing.Size(485, 63);
             this.pnlInferior.TabIndex = 1;
             // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Location = new System.Drawing.Point(377, 21);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(82, 32);
-            this.btnVoltar.TabIndex = 0;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
             // btnRemover
             // 
-            this.btnRemover.Location = new System.Drawing.Point(289, 21);
+            this.btnRemover.Location = new System.Drawing.Point(365, 19);
             this.btnRemover.Name = "btnRemover";
             this.btnRemover.Size = new System.Drawing.Size(82, 32);
             this.btnRemover.TabIndex = 0;
@@ -194,7 +182,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(201, 21);
+            this.btnCancelar.Location = new System.Drawing.Point(277, 19);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(82, 32);
             this.btnCancelar.TabIndex = 0;
@@ -204,7 +192,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(113, 21);
+            this.btnSalvar.Location = new System.Drawing.Point(189, 19);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(82, 32);
             this.btnSalvar.TabIndex = 0;
@@ -214,7 +202,7 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(25, 21);
+            this.btnNovo.Location = new System.Drawing.Point(101, 19);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(82, 32);
             this.btnNovo.TabIndex = 0;
@@ -230,7 +218,7 @@
             this.dgvNota.Name = "dgvNota";
             this.dgvNota.Size = new System.Drawing.Size(485, 252);
             this.dgvNota.TabIndex = 2;
-            this.dgvNota.SelectionChanged += new System.EventHandler(this.dgvNota_SelectionChanged);
+            this.dgvNota.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNota_CellClick);
             // 
             // ViewNotaEntrada
             // 
@@ -266,7 +254,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlInferior;
-        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnRemover;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSalvar;

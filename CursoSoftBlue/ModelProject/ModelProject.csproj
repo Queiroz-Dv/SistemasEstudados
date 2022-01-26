@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fornecedor.cs" />
-    <Compile Include="InputNota.cs" />
-    <Compile Include="InputProdutoNota.cs" />
+    <Compile Include="NotaEntrada.cs" />
+    <Compile Include="ProdutoNotaEntrada.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

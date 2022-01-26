@@ -8,10 +8,10 @@ namespace ViewProject
 {
     public partial class ViewNotaEntrada : Form
     {
-        private NotaEntradaController controller;
-        private DAL_InputNota dal = new DAL_InputNota();
+        private DAL_NotaEntrada dal = new DAL_NotaEntrada();
         private DAL_Fornecedor DAL_Fornecedor = new DAL_Fornecedor();
-        private InputNota notaAtual;
+        private DAL_Produto DAL_Produto = new DAL_Produto();
+        private NotaEntrada notaAtual;
 
         public ViewNotaEntrada()
         {
@@ -34,14 +34,6 @@ namespace ViewProject
             }
         }
 
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            MenuAdm menuAdm = new MenuAdm();
-            this.Hide();
-            menuAdm.ShowDialog();
-            this.Visible = true;
-        }
-
         private void btnNovo_Click(object sender, EventArgs e)
         {
             ClearControlsNota();
@@ -60,9 +52,9 @@ namespace ViewProject
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            dal.Save(new InputNota()
+            dal.Save(new NotaEntrada()
             {
-                ID = string.IsNullOrEmpty(txtID.Text)?(long?)null:Convert.ToInt64(txtID.Text),
+                ID = string.IsNullOrEmpty(txtID.Text) ? (long?)null : Convert.ToInt64(txtID.Text),
                 Numero = txtNumero.Text,
                 DataEmissao = dtpEmissao.Value,
                 DataEntrada = dtpEntrada.Value,
@@ -91,25 +83,6 @@ namespace ViewProject
             }
         }
 
-        private void dgvNota_SelectionChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                this.notaAtual = this.controller.GetNotaByID
-                ((long?)dgvNota.CurrentRow.Cells[0].Value);
-                txtID.Text = notaAtual.ID.ToString();
-                txtNumero.Text = notaAtual.Numero;
-                cmbFornecedor.SelectedItem = notaAtual.FornecedorNota;
-                dtpEmissao.Value = notaAtual.DataEmissao;
-                dtpEntrada.Value = notaAtual.DataEntrada;
-                UpdateGrid();
-            }
-            catch (Exception ex)
-            {
-                this.notaAtual = new InputNota();
-            }
-        }
-
         private void UpdateGrid()
         {
             dgvNota.DataSource = null;
@@ -117,6 +90,20 @@ namespace ViewProject
             {
                 dgvNota.DataSource = this.notaAtual.Produtos;
             }
+        }
+
+        private void dgvNota_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex< 0 || e.ColumnIndex<0)
+            {
+                return;
+            }
+            this.notaAtual = dal.GetById(Convert.ToInt64(dgvNota.Rows[e.RowIndex].Cells[0].Value));
+            txtID.Text = notaAtual.ID.ToString();
+            txtNumero.Text = notaAtual.Numero;
+            dtpEmissao.Value = notaAtual.DataEmissao;
+            dtpEntrada.Value = notaAtual.DataEntrada;
+            cmbFornecedor.SelectedItem = notaAtual.FornecedorNota;
         }
     }
 }

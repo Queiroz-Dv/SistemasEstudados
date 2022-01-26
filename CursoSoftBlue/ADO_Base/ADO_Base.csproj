@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL_Fornecedor.cs" />
-    <Compile Include="DAL_InputNota.cs" />
+    <Compile Include="DAL_NotaEntrada.cs" />
     <Compile Include="DAL_Produto.cs" />
     <Compile Include="DBConnection.cs" />
     <Compile Include="Program.cs" />

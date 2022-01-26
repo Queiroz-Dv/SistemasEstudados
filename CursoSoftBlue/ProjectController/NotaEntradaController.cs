@@ -10,27 +10,27 @@ namespace ProjectController
     {
         private Repository repository = new Repository();
 
-        public InputNota Insert(InputNota nota)
+        public NotaEntrada Insert(NotaEntrada nota)
         {
             return this.repository.InsertNota(nota);
         }
 
-        public void Remove(InputNota nota)
+        public void Remove(NotaEntrada nota)
         {
             this.repository.RemoverNotas(nota);
         }
 
-        public IList<InputNota> GetAll()
+        public IList<NotaEntrada> GetAll()
         {
             return this.repository.GetAllNotas();
         }
 
-        public InputNota Update(InputNota nota)
+        public NotaEntrada Update(NotaEntrada nota)
         {
             return this.repository.UpdateNota(nota);
         }
 
-        public InputNota GetNotaByID(long? ID)
+        public NotaEntrada GetNotaByID(long? ID)
         {
             return this.repository.GetNotaByID(ID);
         }

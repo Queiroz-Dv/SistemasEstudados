@@ -1,13 +1,5 @@
 ﻿using ADO_Base;
-using ProjectController;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ViewProject
@@ -34,9 +26,7 @@ namespace ViewProject
 
         private void entradaDeNotasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ViewNotaEntrada(entradaController,
-                                fornecedorController, 
-                                produtoController).ShowDialog();
+            new ViewNotaEntrada().ShowDialog();
         }
     }
 }

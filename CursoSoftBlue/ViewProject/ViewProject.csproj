@@ -111,10 +111,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ADO_Base\ADO_Base.csproj">
-      <Project>{5F2C5D85-176A-44B4-B5A1-C0BA7A1A73C2}</Project>
-      <Name>ADO_Base</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ModelProject\ModelProject.csproj">
       <Project>{36e11af3-d940-4bca-a399-91579257c7eb}</Project>
       <Name>ModelProject</Name>
@@ -122,6 +118,10 @@
     <ProjectReference Include="..\ProjectController\ProjectController.csproj">
       <Project>{1992094b-c04b-44f3-aade-0ff431625bc3}</Project>
       <Name>ProjectController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjectPersistence\ProjectPersistence.csproj">
+      <Project>{91532d2d-61d8-4023-9236-25e5923537c8}</Project>
+      <Name>ProjectPersistence</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,3 +9,5 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectCo
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectController\obj\Debug\ProjectController.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectController\bin\Debug\ModelProject.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectController\bin\Debug\ModelProject.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectController\bin\Debug\App_Data\ADO_NETDataBase.mdf
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectController\bin\Debug\App_Data\ADO_NETDataBase_log.ldf

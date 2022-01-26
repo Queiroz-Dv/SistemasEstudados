@@ -7,3 +7,5 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPe
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\obj\Debug\ProjectPersistence.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\ModelProject.dll
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\ModelProject.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\App_Data\ADO_NETDataBase.mdf
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ProjectPersistence\bin\Debug\App_Data\ADO_NETDataBase_log.ldf

@@ -1,0 +1,4 @@
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ADO_Base\obj\Debug\ADO_Base.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ADO_Base\obj\Debug\ADO_Base.Properties.Resources.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ADO_Base\obj\Debug\ADO_Base.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\ADO_Base\obj\Debug\ADO_Base.csproj.CoreCompileInputs.cache

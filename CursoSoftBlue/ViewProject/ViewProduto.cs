@@ -1,5 +1,6 @@
 ﻿using ADO_Base;
 using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 using Treinojunior.ProjectModel;
 
@@ -8,16 +9,16 @@ namespace ViewProject
     public partial class ViewProduto : Form
     {
         private DAL_Produto dal = new DAL_Produto();
-        private DAL_Fornecedor DAL_Fornecedor = new DAL_Fornecedor();
         private Produto produtoAtual;
 
         public ViewProduto()
         {
             InitializeComponent();
             InicilizarComboBoxs();
+            dal.GetAllProdutos();
 
         }
-
+        
         private void InicilizarComboBoxs()
         {
             cmbProduto.Items.Clear();
@@ -45,11 +46,12 @@ namespace ViewProject
 
         private void ClearControlsProduto()
         {
-            dgvProduto.ClearSelection();
             txtID.Text = string.Empty;
             cmbProduto.SelectedIndex = -1;
             txtCusto.Text = string.Empty;
             txtEstoque.Text = string.Empty;
+            dgvProduto.ClearSelection();
+            this.produtoAtual = null;
             cmbProduto.Focus();
         }
 
@@ -95,6 +97,45 @@ namespace ViewProject
                 ClearControlsProduto();
                 MessageBox.Show("Produto removido com sucesso");
             }
+        }
+
+        private void dgvProduto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                return;
+            this.produtoAtual = GetProdutoById(Convert.
+               ToInt64(dgvProduto.Rows[e.RowIndex].Cells[0].
+               Value));
+            txtID.Text = this.produtoAtual.ID.ToString();
+            txtCusto.Text = this.produtoAtual.PrecoCusto.ToString();
+            txtPrecoVenda.Text = this.produtoAtual.PrecoVenda.ToString();
+            txtEstoque.Text = this.produtoAtual.Estoque.ToString();
+        }
+
+        private Produto GetProdutoById(long id)
+        {
+            Produto produto = new Produto();
+            var connection = DBConnection.DB_Connection;
+            var command = new SqlCommand("select ID," +
+                                         "Descricao," +
+                                         "PrecoCusto," +
+                                         "PrecoVenda," +
+                                         "Estoque from PRODUTO where ID=@ID", connection);
+            command.Parameters.AddWithValue("@ID", id);
+            connection.Open();
+            using (SqlDataReader reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    produto.ID = reader.GetInt32(0);
+                    produto.Descricao = reader.GetString(1);
+                    produto.PrecoCusto = reader.GetDouble(2);
+                    produto.PrecoVenda = reader.GetDouble(3);
+                    produto.Estoque = reader.GetDouble(4);
+                }
+            }
+            connection.Close();
+            return produto;
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -34,7 +33,16 @@ namespace ADO_Base
 
         private void Insert(Fornecedor fornecedorORM)
         {
-            throw new NotImplementedException();
+            var command = new SqlCommand("insert into FORNECEDORES(ID, " +
+                                         "Nome, " +
+                                         "CNPJ, " +
+            "values(@ID, @Nome, @CNPJ)", connection);
+            command.Parameters.AddWithValue("@ID", fornecedorORM.ID);
+            command.Parameters.AddWithValue("@Nome", fornecedorORM.Nome);
+            command.Parameters.AddWithValue("@CNPJ", fornecedorORM.CNPJ);
+            connection.Open();
+            command.ExecuteNonQuery();
+            connection.Close();
         }
 
         private void Update(Fornecedor fornecedorORM)

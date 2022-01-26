@@ -30,9 +30,13 @@
         {
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.cmbProduto = new System.Windows.Forms.ComboBox();
+            this.txtPrecoVenda = new System.Windows.Forms.TextBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.txtEstoque = new System.Windows.Forms.TextBox();
             this.txtCusto = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,10 +47,6 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.dgvProduto = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtPrecoVenda = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.pnlSuperior.SuspendLayout();
             this.pnlInferior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduto)).BeginInit();
@@ -81,6 +81,23 @@
             this.cmbProduto.Size = new System.Drawing.Size(148, 21);
             this.cmbProduto.TabIndex = 2;
             // 
+            // txtPrecoVenda
+            // 
+            this.txtPrecoVenda.Enabled = false;
+            this.txtPrecoVenda.Location = new System.Drawing.Point(107, 97);
+            this.txtPrecoVenda.Name = "txtPrecoVenda";
+            this.txtPrecoVenda.Size = new System.Drawing.Size(148, 20);
+            this.txtPrecoVenda.TabIndex = 1;
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Enabled = false;
+            this.txtDescricao.Location = new System.Drawing.Point(281, 30);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(172, 119);
+            this.txtDescricao.TabIndex = 1;
+            // 
             // txtEstoque
             // 
             this.txtEstoque.Enabled = false;
@@ -104,6 +121,26 @@
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(148, 20);
             this.txtID.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 98);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Preço Venda:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(278, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Descrição:";
             // 
             // label4
             // 
@@ -208,43 +245,7 @@
             this.dgvProduto.Name = "dgvProduto";
             this.dgvProduto.Size = new System.Drawing.Size(485, 185);
             this.dgvProduto.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 98);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 17);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Preço Venda:";
-            // 
-            // txtPrecoVenda
-            // 
-            this.txtPrecoVenda.Enabled = false;
-            this.txtPrecoVenda.Location = new System.Drawing.Point(107, 97);
-            this.txtPrecoVenda.Name = "txtPrecoVenda";
-            this.txtPrecoVenda.Size = new System.Drawing.Size(148, 20);
-            this.txtPrecoVenda.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(278, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 17);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Descrição:";
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Enabled = false;
-            this.txtDescricao.Location = new System.Drawing.Point(281, 30);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(172, 119);
-            this.txtDescricao.TabIndex = 1;
+            this.dgvProduto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduto_CellClick);
             // 
             // ViewProduto
             // 

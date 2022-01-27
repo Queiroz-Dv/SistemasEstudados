@@ -96,6 +96,12 @@
     <Compile Include="AbaMenuPrincipal\Tabuada.cs" />
     <Compile Include="AbaMenuPrincipal\TesteValidacao.cs" />
     <Compile Include="WindowsFormsSistemas\SistemaReajuste\ReposFuncionario.cs" />
+    <Compile Include="WindowsFormsSistemas\TesteDataSet\DataSetProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsSistemas\TesteDataSet\DataSetProject.Designer.cs">
+      <DependentUpon>DataSetProject.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaConsumoEnergia\ConsumoEnergia.resx">
       <DependentUpon>ConsumoEnergia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsSistemas\TesteDataSet\DataSetProject.resx">
+      <DependentUpon>DataSetProject.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

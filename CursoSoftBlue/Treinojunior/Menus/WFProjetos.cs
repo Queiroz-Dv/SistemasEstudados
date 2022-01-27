@@ -1,6 +1,7 @@
 ﻿using FolhadePagamento;
 using System;
 using Treinojunior.ProjetosGrandes.SistemaConsumoEnergia;
+using Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs;
 using Treinojunior.WindowsFormsSistemas.SistemaArquivamento;
 using ViewProject;
 
@@ -31,6 +32,7 @@ namespace Treinojunior.ProjetosGrandes
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 2. Sistema de Reajuste Salarial                                    ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 3. Sistema Gerador de Arquivo                                      ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 4. Sistema de Gestão de Fornecedores(MVC) - (Necessário Refatorar) ||"));
+                Console.WriteLine("|{0}|", AlinhaTexto(35, "|| 5. Sistema DataSet Tipado                                          ||"));
                 Console.WriteLine("|{0}|", AlinhaTexto(0, ""));
                 Linha();
                 Console.BackgroundColor = ConsoleColor.Black;
@@ -54,6 +56,9 @@ namespace Treinojunior.ProjetosGrandes
                             continue;
                         case 4:
                             new MenuAdm().ShowDialog();
+                            continue;
+                        case 5:
+                            new FormEstados().ShowDialog();
                             continue;
                         default:
                             Centralizar("Opção inválida.");

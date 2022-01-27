@@ -202,7 +202,9 @@
             this.Controls.Add(this.tcResultados);
             this.Controls.Add(this.pnlSuperior);
             this.Name = "DataSetProject";
-            this.Text = "DataSetProject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Data Set Project";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.pnlSuperior.ResumeLayout(false);
             this.tcResultados.ResumeLayout(false);
             this.tpgXML.ResumeLayout(false);

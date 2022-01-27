@@ -17,5 +17,6 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojun
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\ViewProject.exe.config
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\ModelProject.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\ProjectPersistence.pdb
-C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\App_Data\ADO_NETDataBase.mdf
-C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\App_Data\ADO_NETDataBase_log.ldf
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSetTipadoProject.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormEstados.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.TesteDataSet.DataSetProject.resources

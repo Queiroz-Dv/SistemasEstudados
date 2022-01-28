@@ -111,6 +111,7 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CidadesTableAdapter = this.cidadesTableAdapter;
             this.tableAdapterManager.EstadosTableAdapter = this.estadosTableAdapter;
+            this.tableAdapterManager.FornecedoresTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // estadosTableAdapter
@@ -289,7 +290,7 @@
             this.Controls.Add(this.cidadesBindingNavigator);
             this.Name = "FormCidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FormCidades";
+            this.Text = "Cidades";
             this.Load += new System.EventHandler(this.FormCidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cidadesBindingSource)).EndInit();

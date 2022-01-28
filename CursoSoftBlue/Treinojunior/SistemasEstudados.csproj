@@ -91,6 +91,12 @@
     <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormEstados.Designer.cs">
       <DependentUpon>FormEstados.cs</DependentUpon>
     </Compile>
+    <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormFornecedores.Designer.cs">
+      <DependentUpon>FormFornecedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormEstados.resx">
       <DependentUpon>FormEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormFornecedores.resx">
+      <DependentUpon>FormFornecedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\SistemaArquivamento\GeradorArquivo.resx">
       <DependentUpon>GeradorArquivo.cs</DependentUpon>

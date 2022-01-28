@@ -21,13 +21,17 @@ namespace Treinojunior.WindowsFormsSistemas.DataSetTipado
         private void btnEstados_Click(object sender, EventArgs e)
         {
             new FormEstados().ShowDialog();
-            this.Visible = false;
+            
         }
 
         private void btnCidades_Click(object sender, EventArgs e)
         {
             new FormCidades().ShowDialog();
-            
+        }
+
+        private void btnFornecedores_Click(object sender, EventArgs e)
+        {
+            new FormFornecedores().ShowDialog();
         }
     }
 }

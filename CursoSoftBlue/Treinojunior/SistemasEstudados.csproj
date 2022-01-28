@@ -85,6 +85,12 @@
     <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormCidades.Designer.cs">
       <DependentUpon>FormCidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormEstados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormCidades.resx">
       <DependentUpon>FormCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WindowsFormsSistemas\DataSetTipado\Forms\CRUDs\FormEstados.resx">
       <DependentUpon>FormEstados.cs</DependentUpon>

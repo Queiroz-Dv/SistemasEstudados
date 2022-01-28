@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEstados));
             System.Windows.Forms.Label idestadoLabel;
             System.Windows.Forms.Label ufLabel;
             System.Windows.Forms.Label nomeLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEstados));
             this.dSEstadosECidades = new Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSets.DSEstadosECidades();
             this.estadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.estadosTableAdapter = new Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSets.DSEstadosECidadesTableAdapters.EstadosTableAdapter();
             this.tableAdapterManager = new Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager();
             this.estadosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.estadosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idestadoLabel1 = new System.Windows.Forms.Label();
             this.ufTextBox = new System.Windows.Forms.TextBox();
@@ -61,6 +61,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.estadosBindingNavigator)).BeginInit();
             this.estadosBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // idestadoLabel
+            // 
+            idestadoLabel.AutoSize = true;
+            idestadoLabel.Location = new System.Drawing.Point(104, 62);
+            idestadoLabel.Name = "idestadoLabel";
+            idestadoLabel.Size = new System.Drawing.Size(50, 13);
+            idestadoLabel.TabIndex = 1;
+            idestadoLabel.Text = "idestado:";
+            // 
+            // ufLabel
+            // 
+            ufLabel.AutoSize = true;
+            ufLabel.Location = new System.Drawing.Point(104, 91);
+            ufLabel.Name = "ufLabel";
+            ufLabel.Size = new System.Drawing.Size(19, 13);
+            ufLabel.TabIndex = 3;
+            ufLabel.Text = "uf:";
+            // 
+            // nomeLabel
+            // 
+            nomeLabel.AutoSize = true;
+            nomeLabel.Location = new System.Drawing.Point(104, 117);
+            nomeLabel.Name = "nomeLabel";
+            nomeLabel.Size = new System.Drawing.Size(36, 13);
+            nomeLabel.TabIndex = 5;
+            nomeLabel.Text = "nome:";
             // 
             // dSEstadosECidades
             // 
@@ -113,6 +140,31 @@
             this.estadosBindingNavigator.TabIndex = 0;
             this.estadosBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -145,17 +197,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -163,7 +208,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -172,49 +217,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // estadosBindingNavigatorSaveItem
             // 
             this.estadosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.estadosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("estadosBindingNavigatorSaveItem.Image")));
             this.estadosBindingNavigatorSaveItem.Name = "estadosBindingNavigatorSaveItem";
-            this.estadosBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.estadosBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.estadosBindingNavigatorSaveItem.Text = "Save Data";
             this.estadosBindingNavigatorSaveItem.Click += new System.EventHandler(this.estadosBindingNavigatorSaveItem_Click);
-            // 
-            // idestadoLabel
-            // 
-            idestadoLabel.AutoSize = true;
-            idestadoLabel.Location = new System.Drawing.Point(104, 62);
-            idestadoLabel.Name = "idestadoLabel";
-            idestadoLabel.Size = new System.Drawing.Size(50, 13);
-            idestadoLabel.TabIndex = 1;
-            idestadoLabel.Text = "idestado:";
             // 
             // idestadoLabel1
             // 
@@ -225,15 +243,6 @@
             this.idestadoLabel1.TabIndex = 2;
             this.idestadoLabel1.Text = "label1";
             // 
-            // ufLabel
-            // 
-            ufLabel.AutoSize = true;
-            ufLabel.Location = new System.Drawing.Point(104, 91);
-            ufLabel.Name = "ufLabel";
-            ufLabel.Size = new System.Drawing.Size(19, 13);
-            ufLabel.TabIndex = 3;
-            ufLabel.Text = "uf:";
-            // 
             // ufTextBox
             // 
             this.ufTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.estadosBindingSource, "uf", true));
@@ -241,15 +250,6 @@
             this.ufTextBox.Name = "ufTextBox";
             this.ufTextBox.Size = new System.Drawing.Size(100, 20);
             this.ufTextBox.TabIndex = 4;
-            // 
-            // nomeLabel
-            // 
-            nomeLabel.AutoSize = true;
-            nomeLabel.Location = new System.Drawing.Point(104, 117);
-            nomeLabel.Name = "nomeLabel";
-            nomeLabel.Size = new System.Drawing.Size(36, 13);
-            nomeLabel.TabIndex = 5;
-            nomeLabel.Text = "nome:";
             // 
             // nomeTextBox
             // 
@@ -272,6 +272,7 @@
             this.Controls.Add(this.nomeTextBox);
             this.Controls.Add(this.estadosBindingNavigator);
             this.Name = "FormEstados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormEstados";
             this.Load += new System.EventHandler(this.FormEstados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dSEstadosECidades)).EndInit();

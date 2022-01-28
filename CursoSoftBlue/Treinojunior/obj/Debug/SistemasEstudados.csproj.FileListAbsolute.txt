@@ -20,3 +20,4 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojun
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSetTipadoProject.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormEstados.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.TesteDataSet.DataSetProject.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormCidades.resources

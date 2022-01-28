@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs;
 
 namespace Treinojunior.WindowsFormsSistemas.DataSetTipado
 {
@@ -15,6 +16,18 @@ namespace Treinojunior.WindowsFormsSistemas.DataSetTipado
         public DataSetTipadoProject()
         {
             InitializeComponent();
+        }
+
+        private void btnEstados_Click(object sender, EventArgs e)
+        {
+            new FormEstados().ShowDialog();
+            this.Visible = false;
+        }
+
+        private void btnCidades_Click(object sender, EventArgs e)
+        {
+            new FormCidades().ShowDialog();
+            
         }
     }
 }

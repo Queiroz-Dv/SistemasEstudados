@@ -110,7 +110,16 @@ SELECT idestado, uf, nome FROM Estados WHERE (idestado = @idestado)</CommandText
               <Mapping SourceColumn="uf" DataSetColumn="uf" />
               <Mapping SourceColumn="nome" DataSetColumn="nome" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="LivroDataBaseConnectionString (Settings)" DbObjectName="LivroDataBase.dbo.Estados" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByNome" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillByNome" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByNome">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT idestado, uf, nome FROM dbo.Estados ORDER by nome</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
@@ -120,7 +129,7 @@ SELECT idestado, uf, nome FROM Estados WHERE (idestado = @idestado)</CommandText
   <xs:element name="DSEstadosECidades" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSEstadosECidades" msprop:Generator_UserDSName="DSEstadosECidades">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Cidades" msprop:Generator_TableClassName="CidadesDataTable" msprop:Generator_TableVarName="tableCidades" msprop:Generator_TablePropName="Cidades" msprop:Generator_RowDeletingName="CidadesRowDeleting" msprop:Generator_RowChangingName="CidadesRowChanging" msprop:Generator_RowEvHandlerName="CidadesRowChangeEventHandler" msprop:Generator_RowDeletedName="CidadesRowDeleted" msprop:Generator_UserTableName="Cidades" msprop:Generator_RowChangedName="CidadesRowChanged" msprop:Generator_RowEvArgName="CidadesRowChangeEvent" msprop:Generator_RowClassName="CidadesRow">
+        <xs:element name="Cidades" msprop:Generator_TableClassName="CidadesDataTable" msprop:Generator_TableVarName="tableCidades" msprop:Generator_RowChangedName="CidadesRowChanged" msprop:Generator_TablePropName="Cidades" msprop:Generator_RowDeletingName="CidadesRowDeleting" msprop:Generator_RowChangingName="CidadesRowChanging" msprop:Generator_RowEvHandlerName="CidadesRowChangeEventHandler" msprop:Generator_RowDeletedName="CidadesRowDeleted" msprop:Generator_RowClassName="CidadesRow" msprop:Generator_UserTableName="Cidades" msprop:Generator_RowEvArgName="CidadesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idcidade" msprop:Generator_ColumnVarNameInTable="columnidcidade" msprop:Generator_ColumnPropNameInRow="idcidade" msprop:Generator_ColumnPropNameInTable="idcidadeColumn" msprop:Generator_UserColumnName="idcidade" type="xs:long" />
@@ -135,7 +144,7 @@ SELECT idestado, uf, nome FROM Estados WHERE (idestado = @idestado)</CommandText
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Estados" msprop:Generator_TableClassName="EstadosDataTable" msprop:Generator_TableVarName="tableEstados" msprop:Generator_TablePropName="Estados" msprop:Generator_RowDeletingName="EstadosRowDeleting" msprop:Generator_RowChangingName="EstadosRowChanging" msprop:Generator_RowEvHandlerName="EstadosRowChangeEventHandler" msprop:Generator_RowDeletedName="EstadosRowDeleted" msprop:Generator_UserTableName="Estados" msprop:Generator_RowChangedName="EstadosRowChanged" msprop:Generator_RowEvArgName="EstadosRowChangeEvent" msprop:Generator_RowClassName="EstadosRow">
+        <xs:element name="Estados" msprop:Generator_TableClassName="EstadosDataTable" msprop:Generator_TableVarName="tableEstados" msprop:Generator_RowChangedName="EstadosRowChanged" msprop:Generator_TablePropName="Estados" msprop:Generator_RowDeletingName="EstadosRowDeleting" msprop:Generator_RowChangingName="EstadosRowChanging" msprop:Generator_RowEvHandlerName="EstadosRowChangeEventHandler" msprop:Generator_RowDeletedName="EstadosRowDeleted" msprop:Generator_RowClassName="EstadosRow" msprop:Generator_UserTableName="Estados" msprop:Generator_RowEvArgName="EstadosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idestado" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidestado" msprop:Generator_ColumnPropNameInRow="idestado" msprop:Generator_ColumnPropNameInTable="idestadoColumn" msprop:Generator_UserColumnName="idestado" type="xs:long" />
@@ -169,7 +178,7 @@ SELECT idestado, uf, nome FROM Estados WHERE (idestado = @idestado)</CommandText
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Cidades_Estados" msdata:parent="Estados" msdata:child="Cidades" msdata:parentkey="idestado" msdata:childkey="idcidade" msprop:Generator_UserChildTable="Cidades" msprop:Generator_ChildPropName="GetCidadesRows" msprop:Generator_UserRelationName="FK_Cidades_Estados" msprop:Generator_RelationVarName="relationFK_Cidades_Estados" msprop:Generator_UserParentTable="Estados" msprop:Generator_ParentPropName="EstadosRow" />
+      <msdata:Relationship name="FK_Cidades_Estados" msdata:parent="Estados" msdata:child="Cidades" msdata:parentkey="idestado" msdata:childkey="idcidade" msprop:Generator_UserChildTable="Cidades" msprop:Generator_ChildPropName="GetCidadesRows" msprop:Generator_UserRelationName="FK_Cidades_Estados" msprop:Generator_ParentPropName="EstadosRow" msprop:Generator_RelationVarName="relationFK_Cidades_Estados" msprop:Generator_UserParentTable="Estados" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

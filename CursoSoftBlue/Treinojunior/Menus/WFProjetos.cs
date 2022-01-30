@@ -59,7 +59,7 @@ namespace Treinojunior.ProjetosGrandes
                             new MenuAdm().ShowDialog();
                             continue;
                         case 5:
-                            new DataSetTipadoProject().ShowDialog();
+                            new MenuDataSetTipado().ShowDialog();
                             continue;
                         default:
                             Centralizar("Opção inválida.");

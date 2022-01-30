@@ -52,7 +52,7 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cidadesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.idcidadeLabel1 = new System.Windows.Forms.Label();
-            this.idestadoComboBox = new System.Windows.Forms.ComboBox();
+            this.cmbIdEstado = new System.Windows.Forms.ComboBox();
             this.estadosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             idcidadeLabel = new System.Windows.Forms.Label();
@@ -110,8 +110,13 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CidadesTableAdapter = this.cidadesTableAdapter;
+            this.tableAdapterManager.ClientesTableAdapter = null;
             this.tableAdapterManager.EstadosTableAdapter = this.estadosTableAdapter;
             this.tableAdapterManager.FornecedoresTableAdapter = null;
+            this.tableAdapterManager.GruposTableAdapter = null;
+            this.tableAdapterManager.NotadeEntradaTableAdapter = null;
+            this.tableAdapterManager.ProdutosNotaDeEntradaTableAdapter = null;
+            this.tableAdapterManager.ProdutosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // estadosTableAdapter
@@ -251,17 +256,17 @@
             this.idcidadeLabel1.TabIndex = 2;
             this.idcidadeLabel1.Text = "label1";
             // 
-            // idestadoComboBox
+            // cmbIdEstado
             // 
-            this.idestadoComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cidadesBindingSource, "idestado", true));
-            this.idestadoComboBox.DataSource = this.estadosBindingSource;
-            this.idestadoComboBox.DisplayMember = "nome";
-            this.idestadoComboBox.FormattingEnabled = true;
-            this.idestadoComboBox.Location = new System.Drawing.Point(166, 114);
-            this.idestadoComboBox.Name = "idestadoComboBox";
-            this.idestadoComboBox.Size = new System.Drawing.Size(121, 21);
-            this.idestadoComboBox.TabIndex = 4;
-            this.idestadoComboBox.ValueMember = "idestado";
+            this.cmbIdEstado.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.cidadesBindingSource, "idestado", true));
+            this.cmbIdEstado.DataSource = this.estadosBindingSource;
+            this.cmbIdEstado.DisplayMember = "nome";
+            this.cmbIdEstado.FormattingEnabled = true;
+            this.cmbIdEstado.Location = new System.Drawing.Point(166, 114);
+            this.cmbIdEstado.Name = "cmbIdEstado";
+            this.cmbIdEstado.Size = new System.Drawing.Size(121, 21);
+            this.cmbIdEstado.TabIndex = 4;
+            this.cmbIdEstado.ValueMember = "idestado";
             // 
             // estadosBindingSource
             // 
@@ -284,7 +289,7 @@
             this.Controls.Add(idcidadeLabel);
             this.Controls.Add(this.idcidadeLabel1);
             this.Controls.Add(idestadoLabel);
-            this.Controls.Add(this.idestadoComboBox);
+            this.Controls.Add(this.cmbIdEstado);
             this.Controls.Add(nomeLabel);
             this.Controls.Add(this.nomeTextBox);
             this.Controls.Add(this.cidadesBindingNavigator);
@@ -323,7 +328,7 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton cidadesBindingNavigatorSaveItem;
         private System.Windows.Forms.Label idcidadeLabel1;
-        private System.Windows.Forms.ComboBox idestadoComboBox;
+        private System.Windows.Forms.ComboBox cmbIdEstado;
         private System.Windows.Forms.TextBox nomeTextBox;
         private DataSets.DSEstadosECidadesTableAdapters.EstadosTableAdapter estadosTableAdapter;
         private System.Windows.Forms.BindingSource estadosBindingSource;

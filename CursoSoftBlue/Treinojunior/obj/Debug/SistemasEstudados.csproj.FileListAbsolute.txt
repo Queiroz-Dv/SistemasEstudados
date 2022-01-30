@@ -17,10 +17,12 @@ C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojun
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\ViewProject.exe.config
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\ModelProject.pdb
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\bin\Debug\ProjectPersistence.pdb
-C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSetTipadoProject.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormEstados.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.TesteDataSet.DataSetProject.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormCidades.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormFornecedores.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormGrupos.resources
 C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormProdutos.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.MenuDataSetTipado.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormClientes.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\CursoSoftBlue\Treinojunior\obj\Debug\Treinojunior.WindowsFormsSistemas.DataSetTipado.Forms.CRUDs.FormNotaDeEntrada.resources

@@ -504,7 +504,9 @@
             this.tableAdapterManager.FornecedoresTableAdapter = null;
             this.tableAdapterManager.GruposTableAdapter = null;
             this.tableAdapterManager.NotadeEntradaTableAdapter = this.notadeEntradaTableAdapter;
+            this.tableAdapterManager.NotasDeVendaTableAdapter = null;
             this.tableAdapterManager.ProdutosNotaDeEntradaTableAdapter = this.produtosNotaDeEntradaTableAdapter;
+            this.tableAdapterManager.ProdutosNotaDeSaidaTableAdapter = null;
             this.tableAdapterManager.ProdutosTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Treinojunior.WindowsFormsSistemas.DataSetTipado.DataSets.DSEstadosECidadesTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 

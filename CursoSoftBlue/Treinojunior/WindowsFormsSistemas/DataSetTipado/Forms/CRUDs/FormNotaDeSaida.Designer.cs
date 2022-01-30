@@ -55,7 +55,7 @@
             this.bnbSave = new System.Windows.Forms.ToolStripButton();
             this.bnbEdit = new System.Windows.Forms.ToolStripButton();
             this.bnbFecharNota = new System.Windows.Forms.ToolStripButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbxDadosDaNota = new System.Windows.Forms.GroupBox();
             this.idnotadevendaLabel1 = new System.Windows.Forms.Label();
             this.idclienteComboBox = new System.Windows.Forms.ComboBox();
             this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -63,7 +63,7 @@
             this.datavendaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.notafechadaLabel1 = new System.Windows.Forms.Label();
             this.produtosNotaDeSaidaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbxProdutosDaNota = new System.Windows.Forms.GroupBox();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,10 +91,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingNavigator)).BeginInit();
             this.notasDeVendaBindingNavigator.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbxDadosDaNota.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeSaidaBindingSource)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.gbxProdutosDaNota.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -218,6 +218,7 @@
             this.bnbAdd.RightToLeftAutoMirrorImage = true;
             this.bnbAdd.Size = new System.Drawing.Size(23, 22);
             this.bnbAdd.Text = "Add new";
+            this.bnbAdd.Click += new System.EventHandler(this.bnbAdd_Click);
             // 
             // bindingNavigatorCountItem
             // 
@@ -234,6 +235,7 @@
             this.bnbRemove.RightToLeftAutoMirrorImage = true;
             this.bnbRemove.Size = new System.Drawing.Size(23, 22);
             this.bnbRemove.Text = "Delete";
+            this.bnbRemove.Click += new System.EventHandler(this.bnbRemove_Click);
             // 
             // bnbFirst
             // 
@@ -312,6 +314,7 @@
             this.bnbEdit.Name = "bnbEdit";
             this.bnbEdit.Size = new System.Drawing.Size(23, 22);
             this.bnbEdit.Text = "Editar";
+            this.bnbEdit.Click += new System.EventHandler(this.bnbEdit_Click);
             // 
             // bnbFecharNota
             // 
@@ -322,25 +325,25 @@
             this.bnbFecharNota.Size = new System.Drawing.Size(23, 22);
             this.bnbFecharNota.Text = "Fechar Nota";
             // 
-            // groupBox1
+            // gbxDadosDaNota
             // 
-            this.groupBox1.Controls.Add(idnotadevendaLabel);
-            this.groupBox1.Controls.Add(this.idnotadevendaLabel1);
-            this.groupBox1.Controls.Add(idclienteLabel);
-            this.groupBox1.Controls.Add(this.idclienteComboBox);
-            this.groupBox1.Controls.Add(numerodanotaLabel);
-            this.groupBox1.Controls.Add(this.numerodanotaTextBox);
-            this.groupBox1.Controls.Add(datavendaLabel);
-            this.groupBox1.Controls.Add(this.datavendaDateTimePicker);
-            this.groupBox1.Controls.Add(notafechadaLabel);
-            this.groupBox1.Controls.Add(this.notafechadaLabel1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 25);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(456, 144);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dados da nota";
+            this.gbxDadosDaNota.Controls.Add(idnotadevendaLabel);
+            this.gbxDadosDaNota.Controls.Add(this.idnotadevendaLabel1);
+            this.gbxDadosDaNota.Controls.Add(idclienteLabel);
+            this.gbxDadosDaNota.Controls.Add(this.idclienteComboBox);
+            this.gbxDadosDaNota.Controls.Add(numerodanotaLabel);
+            this.gbxDadosDaNota.Controls.Add(this.numerodanotaTextBox);
+            this.gbxDadosDaNota.Controls.Add(datavendaLabel);
+            this.gbxDadosDaNota.Controls.Add(this.datavendaDateTimePicker);
+            this.gbxDadosDaNota.Controls.Add(notafechadaLabel);
+            this.gbxDadosDaNota.Controls.Add(this.notafechadaLabel1);
+            this.gbxDadosDaNota.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gbxDadosDaNota.Location = new System.Drawing.Point(0, 25);
+            this.gbxDadosDaNota.Name = "gbxDadosDaNota";
+            this.gbxDadosDaNota.Size = new System.Drawing.Size(456, 144);
+            this.gbxDadosDaNota.TabIndex = 11;
+            this.gbxDadosDaNota.TabStop = false;
+            this.gbxDadosDaNota.Text = "Dados da nota";
             // 
             // idnotadevendaLabel1
             // 
@@ -398,17 +401,17 @@
             this.produtosNotaDeSaidaBindingSource.DataMember = "FK_ProdutosNotaDeSaida_NotasDeVenda";
             this.produtosNotaDeSaidaBindingSource.DataSource = this.notasDeVendaBindingSource;
             // 
-            // groupBox2
+            // gbxProdutosDaNota
             // 
-            this.groupBox2.Controls.Add(this.dgvProdutos);
-            this.groupBox2.Controls.Add(this.bindingNavigator1);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 208);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(456, 194);
-            this.groupBox2.TabIndex = 13;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Produtos da Nota";
+            this.gbxProdutosDaNota.Controls.Add(this.dgvProdutos);
+            this.gbxProdutosDaNota.Controls.Add(this.bindingNavigator1);
+            this.gbxProdutosDaNota.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gbxProdutosDaNota.Location = new System.Drawing.Point(0, 208);
+            this.gbxProdutosDaNota.Name = "gbxProdutosDaNota";
+            this.gbxProdutosDaNota.Size = new System.Drawing.Size(456, 194);
+            this.gbxProdutosDaNota.TabIndex = 13;
+            this.gbxProdutosDaNota.TabStop = false;
+            this.gbxProdutosDaNota.Text = "Produtos da Nota";
             // 
             // dgvProdutos
             // 
@@ -572,8 +575,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 402);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxProdutosDaNota);
+            this.Controls.Add(this.gbxDadosDaNota);
             this.Controls.Add(this.notasDeVendaBindingNavigator);
             this.Name = "FormNotaDeSaida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -584,12 +587,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.notasDeVendaBindingNavigator)).EndInit();
             this.notasDeVendaBindingNavigator.ResumeLayout(false);
             this.notasDeVendaBindingNavigator.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbxDadosDaNota.ResumeLayout(false);
+            this.gbxDadosDaNota.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosNotaDeSaidaBindingSource)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbxProdutosDaNota.ResumeLayout(false);
+            this.gbxProdutosDaNota.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
@@ -618,7 +621,7 @@
         private System.Windows.Forms.ToolStripButton bnbLast;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton bnbSave;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxDadosDaNota;
         private System.Windows.Forms.Label idnotadevendaLabel1;
         private System.Windows.Forms.ComboBox idclienteComboBox;
         private System.Windows.Forms.TextBox numerodanotaTextBox;
@@ -626,7 +629,7 @@
         private System.Windows.Forms.Label notafechadaLabel1;
         private DataSets.DSEstadosECidadesTableAdapters.ProdutosNotaDeSaidaTableAdapter produtosNotaDeSaidaTableAdapter;
         private System.Windows.Forms.BindingSource produtosNotaDeSaidaBindingSource;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbxProdutosDaNota;
         private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;

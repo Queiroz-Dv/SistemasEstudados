@@ -6161,7 +6161,7 @@ SELECT idproduto, idgrupo, descricao, precodecompra, precodevenda, quantidadeest
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT idproduto, idgrupo, descricao, precodecompra, precodevenda, quantidadeesto" +
@@ -6172,6 +6172,14 @@ SELECT idproduto, idgrupo, descricao, precodecompra, precodevenda, quantidadeest
             this._commandCollection[1].CommandText = "SELECT        idproduto, idgrupo, descricao, precodecompra, precodevenda, quantid" +
                 "adeestoque\r\nFROM            Produtos\r\nORDER BY descricao";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "UPDATE Produtos SET quantidadeestoque   = @quantidadeestoque - @quantidadevendida" +
+                " \r\nWHERE (idproduto = @idproduto)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@quantidadeestoque", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 3, "quantidadeestoque", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@quantidadevendida", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 3, "quantidadeestoque", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idproduto", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "idproduto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6353,6 +6361,32 @@ SELECT idproduto, idgrupo, descricao, precodecompra, precodevenda, quantidadeest
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(long idgrupo, string descricao, decimal precodecompra, decimal precodevenda, decimal quantidadeestoque, long Original_idproduto, long Original_idgrupo, string Original_descricao, decimal Original_precodecompra, decimal Original_precodevenda, decimal Original_quantidadeestoque) {
             return this.Update(Original_idproduto, idgrupo, descricao, precodecompra, precodevenda, quantidadeestoque, Original_idproduto, Original_idgrupo, Original_descricao, Original_precodecompra, Original_precodevenda, Original_quantidadeestoque);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(decimal quantidadeestoque, decimal quantidadevendida, long idproduto) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            command.Parameters[0].Value = ((decimal)(quantidadeestoque));
+            command.Parameters[1].Value = ((decimal)(quantidadevendida));
+            command.Parameters[2].Value = ((long)(idproduto));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
@@ -8196,12 +8230,18 @@ SELECT idnotadevenda, idcliente, numerodanota, datavenda, notafechada FROM Notas
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT idnotadevenda, idcliente, numerodanota, datavenda, notafechada FROM dbo.No" +
                 "tasDeVenda";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "UPDATE NotaDeVenda \r\nSET notafechada = \'S\'\r\nWHERE (idnotadevenda = @idnotadevenda" +
+                ")";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idnotadevenda", global::System.Data.SqlDbType.Variant, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8386,6 +8426,35 @@ SELECT idnotadevenda, idcliente, numerodanota, datavenda, notafechada FROM Notas
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(long idcliente, string numerodanota, System.DateTime datavenda, string notafechada, long Original_idnotadevenda, long Original_idcliente, string Original_numerodanota, System.DateTime Original_datavenda, string Original_notafechada) {
             return this.Update(Original_idnotadevenda, idcliente, numerodanota, datavenda, notafechada, Original_idnotadevenda, Original_idcliente, Original_numerodanota, Original_datavenda, Original_notafechada);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(object idnotadevenda) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((idnotadevenda == null)) {
+                throw new global::System.ArgumentNullException("idnotadevenda");
+            }
+            else {
+                command.Parameters[0].Value = ((object)(idnotadevenda));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

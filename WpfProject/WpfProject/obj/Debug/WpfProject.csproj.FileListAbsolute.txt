@@ -1,0 +1,15 @@
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\bin\Debug\WpfProject.exe.config
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\bin\Debug\WpfProject.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\bin\Debug\WpfProject.pdb
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.csprojAssemblyReference.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\MainWindow.g.cs
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\App.g.cs
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject_MarkupCompile.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject_MarkupCompile.lref
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\MainWindow.baml
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.g.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.Properties.Resources.resources
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.csproj.GenerateResource.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.csproj.CoreCompileInputs.cache
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.exe
+C:\Users\Dubst\source\repos\Queiroz-Dv\SistemasEstudados\WpfProject\WpfProject\obj\Debug\WpfProject.pdb

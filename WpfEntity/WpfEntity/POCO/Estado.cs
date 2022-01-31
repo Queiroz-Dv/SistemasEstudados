@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace WpfEntity.POCO
 {
@@ -11,5 +7,12 @@ namespace WpfEntity.POCO
         public long Id { get; set; }
         public string UF { get; set; }
         public string Nome { get; set; }
+
+        public virtual List<BodyCidades> CidadeBodies { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nome;
+        }
     }
 }

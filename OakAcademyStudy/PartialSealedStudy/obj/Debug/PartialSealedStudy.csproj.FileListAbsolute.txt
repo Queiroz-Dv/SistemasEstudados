@@ -1,9 +1,0 @@
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\bin\Debug\PartialSealedStudy.exe.config
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\bin\Debug\PartialSealedStudy.exe
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\bin\Debug\PartialSealedStudy.pdb
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\obj\Debug\PartialSealedStudy.Form1.resources
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\obj\Debug\PartialSealedStudy.Properties.Resources.resources
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\obj\Debug\PartialSealedStudy.csproj.GenerateResource.cache
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\obj\Debug\PartialSealedStudy.csproj.CoreCompileInputs.cache
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\obj\Debug\PartialSealedStudy.exe
-C:\Users\Dubst\source\repos\InheritanceStudy\PartialSealedStudy\obj\Debug\PartialSealedStudy.pdb

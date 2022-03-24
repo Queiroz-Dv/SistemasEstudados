@@ -52,7 +52,7 @@ namespace Treinojunior
                         break;
                     default:
                         Console.WriteLine("\n");
-                        Centralizar("OpÁ„o inv·lida | Tente novamente!");
+                        Centralizar("Op–∑–≥o inv–±lida | Tente novamente!");
                         break;
                 }
                 Console.Clear();

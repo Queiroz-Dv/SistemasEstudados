@@ -5,3 +5,16 @@
 *.lock
 /CursoSoftBlue/ADO_Base/App_Data/ADO_NETDataBase_log.ldf
 /CursoSoftBlue/ADO_Base/App_Data/ADO_NETDataBase.mdf
+CursoSoftBlue/.vs/Sistemas_CSharp/v15/.suo
+.gitignore
+.gitignore
+CursoSoftBlue/ViewProject/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+CursoSoftBlue/ViewProject/obj/Debug/ViewProject.csproj.AssemblyReference.cache
+CursoSoftBlue/Treinojunior/obj/Debug/SistemasEstudados.csproj.AssemblyReference.cache
+CursoSoftBlue/Treinojunior/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+CursoSoftBlue/ProjectPersistence/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+CursoSoftBlue/ProjectController/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+CursoSoftBlue/.vs/Sistemas_CSharp/v15/Server/sqlite3/storage.ide-wal
+CursoSoftBlue/ModelProject/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+CursoSoftBlue/.vs/Sistemas_CSharp/v15/Server/sqlite3/storage.ide-shm
+CursoSoftBlue/.vs/Sistemas_CSharp/v15/.suo
